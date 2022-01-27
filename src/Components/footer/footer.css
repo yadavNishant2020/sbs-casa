@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200&display=swap");
+
+footer {
+  box-sizing: border-box;
+  position: relative;
+  margin: 5px 0px 0px 0px;
+  background-color: #ededed;
+  color: #000000;
+  font-style: normal;
+  padding: 4px 0 10px;
+  line-height: 24px;
+  font-family: "Tajawal", sans-serif;
+  word-break: normal;
+  border-radius: 10px;
+  box-shadow: 2px 6px 60px 20px rgba(0, 0, 0, 0.1);
+}
+img {
+  width: 100%;
+}
+.row-footer {
+  padding: 3px 20px 3px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5%;
+}
+
+.row-footer::after {
+  clear: both;
+  display: table;
+}
+
+hr {
+  width: 50%;
+  border: none;
+  border-top: 0.1rem ridge rgba(100, 150, 173, 0.596);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Oregano&display=swap");
+
+.site-logo {
+  float: left;
+  width: 15%;
+  padding: 10px;
+}
+.line {
+  height: 1px;
+  width: 100vw;
+  color: #000000;
+  background-color: #000000;
+  margin-bottom: 2%;
+}
+.site-logo span {
+  font-family: "Oregano", cursive;
+  font-size: 20px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+
+.site-links span {
+  font-family: "Gruppo", cursive;
+}
+
+ul.list-links {
+  list-style-type: none;
+}
+
+ul.list-links li {
+  font-size: 14px;
+  margin-left: -38px;
+}
+
+.adr-email {
+  float: left;
+  width: 28%;
+  padding: 10px;
+}
+
+.adr-email span {
+  font-family: "Gruppo", cursive;
+}
+
+.adr-email ul {
+  font-size: 14px;
+  list-style-type: none;
+  margin-left: -38px;
+}
+
+.location i {
+  margin-right: 11px;
+}
+
+.email a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #00a9c7;
+}
+.email:hover a {
+  color: #262d55;
+}
+
+.follow-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.follow-icons li {
+  margin: 0 10px;
+  list-style: none;
+}
+
+.follow-icons li i {
+  font-size: 30px;
+  font-weight: 0;
+  color: rgb(0, 0, 0);
+}
+.follow-icons li i:hover {
+  color: #00a9c7;
+}
+.follow-icons li span {
+  padding-right: 6px;
+}
+
+@keyframes mymove {
+  0% {
+    left: 0px;
+  }
+  25% {
+    left: 15px;
+  }
+  50% {
+    left: 0px;
+  }
+  75% {
+    left: 15px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@media (max-width: 900px) {
+  .subscribe-form {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .subscribe-form > p {
+    margin-left: -5px;
+  }
+
+  .site-logo {
+    float: left;
+    width: 28%;
+    padding: 10px;
+  }
+
+  .main-nav {
+    top: 30%;
+    left: 12%;
+  }
+
+  .site-links {
+    float: left;
+    width: 20%;
+    padding: 10px;
+  }
+
+  .adr-email {
+    width: 35%;
+  }
+
+  .adr-email .email {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .right-dis {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .left-dis {
+    width: 100%;
+    text-align: center;
+  }
+}

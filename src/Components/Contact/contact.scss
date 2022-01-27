@@ -1,0 +1,170 @@
+section {
+  padding: 4% 0;
+  min-height: 100vh;
+  background-image: url("../Background/skills_vector.png");
+  background-size: cover;
+}
+.contain-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-left: 7.5vw;
+}
+.contact-info {
+  display: inline-block;
+  width: 70%;
+  text-align: center;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.contact-info-icon img {
+  width: 30%;
+}
+.phone {
+  width: 120%;
+}
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #94b6c7;
+  flex-direction: column;
+  padding: 20px;
+  height: 20vh;
+}
+.contact-info-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 2rem;
+  color: white;
+}
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+
+.master {
+  display: flex;
+  justify-content: center;
+  margin: 4% 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  height: auto;
+  z-index: -99;
+}
+
+.container {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 20px 40px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+  min-width: 370px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: "Roboto", sans-serif;
+
+  font-weight: 250;
+}
+.form-container {
+  display: flex;
+}
+
+.left-container {
+  flex: 1;
+  height: 480px;
+  background-color: #94b6c7;
+}
+.right-container {
+  display: flex;
+  flex: 1;
+  height: 460px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-container {
+  display: flex;
+  flex: 1;
+  height: 480px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.left-container p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+.right-inner-container {
+  width: 70%;
+  height: 80%;
+  text-align: center;
+}
+
+.left-inner-container {
+  height: 50%;
+  width: 80%;
+  text-align: center;
+  line-height: 22px;
+}
+
+input,
+textarea {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid #94b6c7;
+}
+
+button {
+  border-radius: 20px;
+  border: 1px solid #00b4cf;
+  background-color: #94b6c7;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+@media only screen and (max-width: 600px) {
+  .left-container {
+    display: none;
+  }
+  .lg-view {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .sm-view {
+    display: none;
+  }
+}
+
+form p {
+  text-align: left;
+}

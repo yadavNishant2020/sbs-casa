@@ -1,0 +1,48 @@
+@import "../../global.scss";
+
+.menu {
+  width: 20vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -20vw;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease;
+
+  &.active {
+    right: 0;
+    background-color: #f7fafc;
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+    font-size: 30px;
+    font-weight: 300;
+    color: #4dc3e0;
+    width: 60%;
+    background-color: #f7fafc;
+
+    li {
+      margin-bottom: 25px;
+      font-family: "Roboto", sans-serif;
+      color: #4dc3e0;
+      background-color: #f7fafc;
+      a {
+        font-size: inherit;
+        color: inherit;
+        text-decoration: none;
+        background-color: #f7fafc;
+      }
+
+      &:hover {
+        font-weight: 500;
+        background-color: #f7fafc;
+      }
+    }
+  }
+}

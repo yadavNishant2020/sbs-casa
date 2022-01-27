@@ -1,0 +1,15 @@
+.app {
+  .sections {
+    width: 100%;
+    background-color: white;
+    position: relative;
+    top: 90px;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+
+    > * {
+      width: 100vw;
+    }
+  }
+}
