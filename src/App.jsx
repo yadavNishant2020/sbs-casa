@@ -8,22 +8,28 @@ import { useState } from "react";
 import Menu from "./Components/menu/Menu";
 import Team from "./Components/team/Team";
 import Footer from "./Components/footer/Footer";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="app">
-      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <div className="sections">
-        <Intro />
-        <About />
-        <Portfolio />
-        <Contact />
-        <Team />
-        <Footer />
+    <>
+      {/* <Route path="/" component={Team} /> */}
+
+      <div className="app">
+        <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <div className="sections">
+          <Intro />
+          <About />
+          <Portfolio />
+          <Contact />
+          <Team />
+          <Footer />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

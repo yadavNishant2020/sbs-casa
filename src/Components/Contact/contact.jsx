@@ -48,7 +48,7 @@ export default function Contact() {
     }
   };
   return (
-    <section class="contact-page-sec">
+    <section class="contact-page-sec" id="contact">
       <div class="containers">
         <div class="row">
           <div className="contain-info">
