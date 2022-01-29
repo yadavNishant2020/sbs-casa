@@ -1,13 +1,9 @@
 import "./about.scss";
-import Delhi from "../Place/Delhi";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function about() {
   return (
     <div className="about" id="about">
-      <Routes>
-        <Route exact path="/delhi" element={<Delhi />} />
-      </Routes>
       <div className="headings">
         <p>About</p>
         <h1>SBS CASA HOSTELS</h1>
@@ -36,7 +32,7 @@ function about() {
           </li>
           <li className="noida">
             <img src="images/noida.png" alt="" srcset="" />
-            <Link exact to="/delhi">
+            <Link exact to="/noida">
               📍Noida
             </Link>
           </li>

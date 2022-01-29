@@ -42,16 +42,6 @@ export const noida = [
     title: "SBS karana",
     img: "https://user-images.githubusercontent.com/75436573/151223791-dba8d831-143b-4748-b0e7-289e291b93f5.jpg",
   },
-  {
-    id: 4,
-    title: "SBS Dronacharya",
-    img: "https://user-images.githubusercontent.com/75436573/151223797-9c3b551e-12b6-473e-b9e7-1caf463d8c61.jpg",
-  },
-  {
-    id: 5,
-    title: "SBS Eklavya",
-    img: "https://user-images.githubusercontent.com/75436573/151223804-08cc51b1-1a03-4a7b-8ed6-258874a1692b.jpg",
-  },
 ];
 
 export const gurgaon = [
@@ -74,11 +64,6 @@ export const gurgaon = [
     id: 4,
     title: "SBS Dronacharya",
     img: "https://user-images.githubusercontent.com/75436573/151223797-9c3b551e-12b6-473e-b9e7-1caf463d8c61.jpg",
-  },
-  {
-    id: 5,
-    title: "SBS Eklavya",
-    img: "https://user-images.githubusercontent.com/75436573/151223804-08cc51b1-1a03-4a7b-8ed6-258874a1692b.jpg",
   },
 ];
 
@@ -105,6 +90,11 @@ export const faridabad = [
   },
   {
     id: 5,
+    title: "SBS Eklavya",
+    img: "https://user-images.githubusercontent.com/75436573/151223804-08cc51b1-1a03-4a7b-8ed6-258874a1692b.jpg",
+  },
+  {
+    id: 6,
     title: "SBS Eklavya",
     img: "https://user-images.githubusercontent.com/75436573/151223804-08cc51b1-1a03-4a7b-8ed6-258874a1692b.jpg",
   },

@@ -1,29 +1,11 @@
 import { useEffect, useState } from "react";
-import PortfolioList from "../portfolioList/PortfolioList";
-import "./portfolio.scss";
-import { delhi, noida, gurgaon, faridabad } from "../../data";
+import PortfolioList from "../../portfolioList/PortfolioList";
+import "./delhi.scss";
+import { delhi, noida, gurgaon, faridabad } from "../../../data";
 
-export default function Portfolio() {
-  const [selected, setSelected] = useState("web");
+export default function Delhi() {
+  const [selected] = useState("mobile");
   const [data, setData] = useState([]);
-  const list = [
-    {
-      id: "web",
-      title: "Delhi",
-    },
-    {
-      id: "mobile",
-      title: "Noida",
-    },
-    {
-      id: "design",
-      title: "Gurgaon",
-    },
-    {
-      id: "content",
-      title: "Faridabad",
-    },
-  ];
 
   useEffect(() => {
     switch (selected) {
@@ -47,16 +29,9 @@ export default function Portfolio() {
   return (
     <div className="portfolio" id="hostel">
       <h1>HOSTELS</h1>
-      <ul className="list">
-        {list.map((item) => (
-          <PortfolioList
-            title={item.title}
-            active={selected === item.id}
-            setSelected={setSelected}
-            id={item.id}
-          />
-        ))}
-      </ul>
+
+      <h3>Delhi</h3>
+
       <div className="containers">
         {data.map((d) => (
           <div className="item">
