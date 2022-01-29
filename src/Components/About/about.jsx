@@ -1,8 +1,13 @@
 import "./about.scss";
+import Delhi from "../Place/Delhi";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 function about() {
   return (
     <div className="about" id="about">
+      <Routes>
+        <Route exact path="/delhi" element={<Delhi />} />
+      </Routes>
       <div className="headings">
         <p>About</p>
         <h1>SBS CASA HOSTELS</h1>
@@ -23,17 +28,29 @@ function about() {
       </div>
       <div className="place">
         <ul>
-          <li>
-            <a href="">📍Delhi</a>
+          <li className="delhi">
+            <img src="images/delhi.png" alt="" srcset="" />
+            <Link exact to="/delhi">
+              📍New Delhi
+            </Link>
           </li>
-          <li>
-            <a href="">📍Noida</a>
+          <li className="noida">
+            <img src="images/noida.png" alt="" srcset="" />
+            <Link exact to="/delhi">
+              📍Noida
+            </Link>
           </li>
-          <li>
-            <a href="">📍Gurgaon</a>
-          </li>{" "}
-          <li>
-            <a href="">📍Faridabad</a>
+          <li className="delhi">
+            <img src="images/gurgaon.png" alt="" srcset="" />
+            <Link exact to="/delhi">
+              📍Gurgaon
+            </Link>
+          </li>
+          <li className="delhi">
+            <img src="images/faridabad.png" alt="" srcset="" />
+            <Link exact to="/delhi">
+              📍Faridabad
+            </Link>
           </li>
         </ul>
       </div>
