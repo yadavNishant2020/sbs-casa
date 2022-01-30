@@ -38,13 +38,13 @@ function about() {
           </li>
           <li className="delhi">
             <img src="images/gurgaon.png" alt="" srcset="" />
-            <Link exact to="/delhi">
+            <Link exact to="/gurgaon">
               📍Gurgaon
             </Link>
           </li>
           <li className="delhi">
             <img src="images/faridabad.png" alt="" srcset="" />
-            <Link exact to="/delhi">
+            <Link exact to="/faridabad">
               📍Faridabad
             </Link>
           </li>

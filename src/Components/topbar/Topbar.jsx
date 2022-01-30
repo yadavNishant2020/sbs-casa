@@ -1,12 +1,14 @@
 import "./topbar.scss";
-
+import { Link } from "react-router-dom";
 export default function Topbar({ menuOpen, setMenuOpen }) {
   return (
     <div className={"topbar " + (menuOpen && "active")}>
       <div className="wrappers">
         <div className="lefts">
           <div href="#intro" className="logos">
-            <img src="images/logo.png" alt="" />
+            <Link exact to="/">
+              <img src="images/logo.png" alt="" />
+            </Link>
           </div>
 
           <div className="itemContainers">

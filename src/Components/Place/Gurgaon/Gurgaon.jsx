@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
-import "./delhi.scss";
+
+import "./gurgaon.scss";
 import { delhi, noida, gurgaon, faridabad } from "../../../data";
-import { Link } from "react-router-dom";
 
-export default function Delhi() {
-  const [selected] = useState("web");
+export default function Gurgaon() {
+  const [selected] = useState("design");
   const [data, setData] = useState([]);
-
   useEffect(() => {
     switch (selected) {
       case "web":
@@ -29,13 +28,16 @@ export default function Delhi() {
   return (
     <div className="portfolio" id="hostel">
       <h1>HOSTELS</h1>
-      <h3>Delhi</h3>
+
+      <h3>Gurgaon</h3>
+
       <div className="containers">
         {data.map((d) => (
           <div className="item">
             <div className="imgContainer">
               <img src={d.img} alt="" />
             </div>
+
             <h3>{d.title}</h3>
           </div>
         ))}
