@@ -2,7 +2,7 @@ import Topbar from "./Components/topbar/Topbar";
 import Intro from "./Components/Intro/intro";
 import About from "./Components/About/about";
 import Contact from "./Components/Contact/contact";
-import "./app.scss";
+
 import { useState } from "react";
 import Menu from "./Components/menu/Menu";
 import Team from "./Components/team/Team";
@@ -11,7 +11,7 @@ import Noida from "./Components/Place/Noida/Noida";
 import Gurgaon from "./Components/Place/Gurgaon/Gurgaon";
 import Faridabad from "./Components/Place/Faridabad/Faridabad";
 import Arjuna from "./Components/Place/Delhi/arjuna/Arjuna";
-
+import "./app.scss";
 import Footer from "./Components/footer/Footer";
 import React from "react";
 import { Route, Routes } from "react-router-dom";
