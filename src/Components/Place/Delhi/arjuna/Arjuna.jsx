@@ -1,9 +1,18 @@
 import React from "react";
 import "./arjuna.scss";
 import "../../../Intro/intro.scss";
-// import { Carousel } from "react-bootstrap";
-// import "bootstrap/dist/css/bootstrap.min.css";
-import { Link } from "react-router-dom";
+import SimpleImageSlider from "react-simple-image-slider";
+
+const images = [
+  { url: "/images/hostels/delhi/image0.jpeg" },
+  { url: "images/hostels/delhi/image1.jpeg" },
+  { url: "images/hostels/delhi/image2.jpeg" },
+  { url: "images/hostels/delhi/image3.jpeg" },
+  { url: "images/hostels/delhi/image4.jpeg" },
+  { url: "images/hostels/delhi/image5.jpeg" },
+  { url: "images/hostels/delhi/image6.jpeg" },
+];
+
 const demos = {
   plotly:
     '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1752.4984241029615!2d77.2081497758807!3d28.539814451874694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce21a50f66b47%3A0xfe6b1c3a045b1a65!2sFLAT%2057-60%2C%20Bhavishya%20Nidhi%20Enclave%2C%2030%2F1%2C%20Bhavishya%20Nidhi%20Enclave%2C%20Begumpur%2C%20New%20Delhi%2C%20Delhi%20110017!5e0!3m2!1sen!2sin!4v1643649897042!5m2!1sen!2sin" width="800" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
@@ -18,50 +27,15 @@ function Iframe(props) {
 function Delhi() {
   return (
     <div>
-      {/* <Carousel variant="dark">
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="\images\hostels\delhi\image0.jpeg"
-            alt="First slide"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="\images\hostels\delhi\image1.jpeg"
-            alt="Second slide"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="\images\hostels\delhi\image2.jpeg"
-            alt="Third slide"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="\images\hostels\delhi\image3.jpeg"
-            alt="Third slide"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="\images\hostels\delhi\image4.jpeg"
-            alt="Third slide"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="\images\hostels\delhi\image5.jpeg"
-            alt="Third slide"
-          />
-        </Carousel.Item>
-      </Carousel> */}
+      <div>
+        <SimpleImageSlider
+          width={"100vw"}
+          height={"70vh"}
+          images={images}
+          showBullets={true}
+          showNavs={true}
+        />
+      </div>
       <div className="about" id="about">
         <div className="headingsss">
           <h1>SBS Arjuna</h1>

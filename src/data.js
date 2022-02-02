@@ -3,7 +3,7 @@ export const delhi = [
     id: 1,
     title: "SBS RamSheil",
     img: "https://user-images.githubusercontent.com/75436573/151223766-07a67a1e-80f3-4226-ac27-bb06358799a2.jpg",
-    link: "URL:/arjuna",
+    link: "url:/arjuna",
   },
   {
     id: 2,
