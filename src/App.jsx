@@ -11,6 +11,10 @@ import Noida from "./Components/Place/Noida/Noida";
 import Gurgaon from "./Components/Place/Gurgaon/Gurgaon";
 import Faridabad from "./Components/Place/Faridabad/Faridabad";
 import Arjuna from "./Components/Place/Delhi/arjuna/Arjuna";
+import RamSheela from "./Components/Place/Delhi/ramSheela/RamSheela";
+import Drona from "./Components/Place/Delhi/drona/Drona";
+import Karana from "./Components/Place/Delhi/karana/Karana";
+import Eklavaya from "./Components/Place/Delhi/eklavaya/Eklavaya";
 import "./app.scss";
 import Footer from "./Components/footer/Footer";
 import React from "react";
@@ -42,6 +46,10 @@ function App() {
             <Route exact path="/gurgaon" element={<Gurgaon />} />
             <Route exact path="/faridabad" element={<Faridabad />} />
             <Route exact path="/arjuna" element={<Arjuna />} />
+            <Route exact path="/ramSheela" element={<RamSheela />} />
+            <Route exact path="/drona" element={<Drona />} />
+            <Route exact path="/karana" element={<Karana />} />
+            <Route exact path="/eklavaya" element={<Eklavaya />} />
           </Routes>
 
           {/* <Portfolio /> */}

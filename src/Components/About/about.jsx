@@ -27,25 +27,25 @@ function about() {
           <li className="delhi">
             <img src="images/delhi.png" alt="" srcset="" />
             <Link exact to="/delhi">
-              📍New Delhi
+              New Delhi
             </Link>
           </li>
           <li className="noida">
             <img src="images/noida.png" alt="" srcset="" />
             <Link exact to="/noida">
-              📍Noida
+              Noida
             </Link>
           </li>
           <li className="delhi">
             <img src="images/gurgaon.png" alt="" srcset="" />
             <Link exact to="/gurgaon">
-              📍Gurgaon
+              Gurgaon
             </Link>
           </li>
           <li className="delhi">
             <img src="images/faridabad.png" alt="" srcset="" />
             <Link exact to="/faridabad">
-              📍Faridabad
+              Faridabad
             </Link>
           </li>
         </ul>

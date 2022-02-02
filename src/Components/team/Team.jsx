@@ -13,7 +13,7 @@ function Team() {
           </div>
 
           <div className="member-name">
-            <h3>Mr. Ankur Sharma</h3>
+            <h3>Ankur Sharma</h3>
             <h5>Founder</h5>
           </div>
         </div>
@@ -26,7 +26,7 @@ function Team() {
           </div>
 
           <div className="member-name">
-            <h3>Mr. Ashish Sharma</h3>
+            <h3>Ashish Sharma</h3>
             <h5>Co-Founder</h5>
           </div>
         </div>
@@ -38,7 +38,7 @@ function Team() {
           </div>
 
           <div className="member-name">
-            <h3>Mr. Parag Sharma</h3>
+            <h3>Parag Sharma</h3>
             <h5>Operations and Business</h5>
           </div>
         </div>
