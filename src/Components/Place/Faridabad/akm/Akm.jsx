@@ -4,11 +4,10 @@ import "../../../Intro/intro.scss";
 import SimpleImageSlider from "react-simple-image-slider";
 
 const images = [
-  { url: "/images/hostels/delhi/karana/image0.jpeg" },
-  { url: "/images/hostels/delhi/karana/image1.jpg" },
-  { url: "/images/hostels/delhi/karana/image2.jpg" },
-  { url: "/images/hostels/delhi/karana/image3.jpg" },
-  { url: "/images/hostels/delhi/karana/image2.jpg" },
+  { url: "/images/hostels/faridabad/akm/img1.jpg" },
+  { url: "/images/hostels/faridabad/akm/img2.jpg" },
+  { url: "/images/hostels/faridabad/akm/img3.jpg" },
+  { url: "/images/hostels/faridabad/akm/img4.jpg" },
 ];
 
 const demos = {
@@ -22,7 +21,7 @@ function Iframe(props) {
     />
   );
 }
-function Mansheel() {
+function Akm() {
   return (
     <div>
       <div>
@@ -36,7 +35,7 @@ function Mansheel() {
       </div>
       <div className="about" id="about">
         <div className="headingsss">
-          <h1>SBS karana</h1>
+          <h1>SBS AKM</h1>
         </div>
         <div className="detailss">
           <ul>
@@ -50,8 +49,8 @@ function Mansheel() {
           <div className="map">
             <div className="address">
               <p>
-                House no.-30 , Begampur, near Begampur Gurudwara, Malviya Nagar,
-                New Delhi -110017
+                House No. - 103, Everwell Society, CGHS Plot No. - 7, Faridabad
+                - 121001
               </p>
               <div id="btnMain">
                 <div id="btnBox">BOOK NOW</div>
@@ -296,4 +295,4 @@ function Mansheel() {
   );
 }
 
-export default Mansheel;
+export default Akm;

@@ -4,11 +4,9 @@ import "../../../Intro/intro.scss";
 import SimpleImageSlider from "react-simple-image-slider";
 
 const images = [
-  { url: "/images/hostels/delhi/karana/image0.jpeg" },
-  { url: "/images/hostels/delhi/karana/image1.jpg" },
-  { url: "/images/hostels/delhi/karana/image2.jpg" },
-  { url: "/images/hostels/delhi/karana/image3.jpg" },
-  { url: "/images/hostels/delhi/karana/image2.jpg" },
+  { url: "/images/hostels/faridabad/mansheel/img1.jpg" },
+  { url: "/images/hostels/faridabad/mansheel/img2.jpg" },
+  { url: "/images/hostels/faridabad/mansheel/img3.jpg" },
 ];
 
 const demos = {
@@ -22,7 +20,7 @@ function Iframe(props) {
     />
   );
 }
-function Vp() {
+function Mansheel() {
   return (
     <div>
       <div>
@@ -36,7 +34,7 @@ function Vp() {
       </div>
       <div className="about" id="about">
         <div className="headingsss">
-          <h1>SBS Vp</h1>
+          <h1>SBS Mansheel</h1>
         </div>
         <div className="detailss">
           <ul>
@@ -50,8 +48,8 @@ function Vp() {
           <div className="map">
             <div className="address">
               <p>
-                House no.-30 , Begampur, near Begampur Gurudwara, Malviya Nagar,
-                New Delhi -110017
+                House No. - 737 , Sector 28 , near Shani Dev Mandir , Haryana -
+                121002
               </p>
               <div id="btnMain">
                 <div id="btnBox">BOOK NOW</div>
@@ -296,4 +294,4 @@ function Vp() {
   );
 }
 
-export default Vp;
+export default Mansheel;

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 import "./faridabad.scss";
 import { delhi, noida, gurgaon, faridabad } from "../../../data";
 
@@ -35,7 +35,9 @@ export default function Faridabad() {
         {data.map((d) => (
           <div className="item">
             <div className="imgContainer">
-              <img src={d.img} alt="" />
+              <Link to={`/faridabad/${d.title}`}>
+                <img src={d.img} alt="" />
+              </Link>
             </div>
 
             <h3>{d.title}</h3>

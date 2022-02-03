@@ -15,6 +15,11 @@ import RamSheela from "./Components/Place/Delhi/ramSheela/RamSheela";
 import Drona from "./Components/Place/Delhi/drona/Drona";
 import Karana from "./Components/Place/Delhi/karana/Karana";
 import Eklavaya from "./Components/Place/Delhi/eklavaya/Eklavaya";
+import Vp from "./Components/Place/Gurgaon/guru/Guru";
+import Guru from "./Components/Place/Gurgaon/guru/Guru";
+import Mansheel from "./Components/Place/Faridabad/mansheel/Mansheel";
+import Akm from "./Components/Place/Faridabad/akm/Akm";
+import Ashiyana from "./Components/Place/Faridabad/ashiyana/Ashiyana";
 import "./app.scss";
 import Footer from "./Components/footer/Footer";
 import React from "react";
@@ -50,6 +55,19 @@ function App() {
             <Route exact path="/delhi/3" element={<Karana />} />
             <Route exact path="/delhi/4" element={<Drona />} />
             <Route exact path="/delhi/5" element={<Eklavaya />} />
+            <Route exact path="/noida/SBS-VP" element={<Vp />} />
+            <Route exact path="/gurgaon/SBS%20Guru" element={<Guru />} />
+            <Route
+              exact
+              path="/faridabad/SBS%20Mansheel"
+              element={<Mansheel />}
+            />
+            <Route exact path="/faridabad/SBS%20AKM" element={<Akm />} />
+            <Route
+              exact
+              path="/faridabad/SBS%20Ashiyana"
+              element={<Ashiyana />}
+            />
           </Routes>
 
           <Footer />

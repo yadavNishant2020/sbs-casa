@@ -29,7 +29,7 @@ export const delhi = [
 export const noida = [
   {
     id: 11,
-    title: "SBS VP",
+    title: "SBS-VP",
     img: "https://user-images.githubusercontent.com/75436573/152419516-1b218a6e-a1ef-4b0d-afd7-8fa798507294.png",
   },
 ];

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import "./gurgaon.scss";
 import { delhi, noida, gurgaon, faridabad } from "../../../data";
@@ -35,7 +36,9 @@ export default function Gurgaon() {
         {data.map((d) => (
           <div className="item">
             <div className="imgContainer">
-              <img src={d.img} alt="" />
+              <Link to={`/gurgaon/${d.title}`}>
+                <img src={d.img} alt="" />
+              </Link>{" "}
             </div>
 
             <h3>{d.title}</h3>
