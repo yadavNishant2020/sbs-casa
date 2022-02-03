@@ -10,7 +10,7 @@ import Delhi from "./Components/Place/Delhi/Delhi";
 import Noida from "./Components/Place/Noida/Noida";
 import Gurgaon from "./Components/Place/Gurgaon/Gurgaon";
 import Faridabad from "./Components/Place/Faridabad/Faridabad";
-import Arjuna from "./Components/Place/Delhi/arjuna/Arjuna";
+import Laxman from "./Components/Place/Delhi/laxman/Laxman";
 import RamSheela from "./Components/Place/Delhi/ramSheela/RamSheela";
 import Drona from "./Components/Place/Delhi/drona/Drona";
 import Karana from "./Components/Place/Delhi/karana/Karana";
@@ -45,14 +45,12 @@ function App() {
             <Route exact path="/noida" element={<Noida />} />
             <Route exact path="/gurgaon" element={<Gurgaon />} />
             <Route exact path="/faridabad" element={<Faridabad />} />
-            <Route exact path="/arjuna" element={<Arjuna />} />
-            <Route exact path="/ramSheela" element={<RamSheela />} />
-            <Route exact path="/drona" element={<Drona />} />
-            <Route exact path="/karana" element={<Karana />} />
-            <Route exact path="/eklavaya" element={<Eklavaya />} />
+            <Route exact path="/delhi/1" element={<RamSheela />} />
+            <Route exact path="/delhi/2" element={<Laxman />} />
+            <Route exact path="/delhi/3" element={<Karana />} />
+            <Route exact path="/delhi/4" element={<Drona />} />
+            <Route exact path="/delhi/5" element={<Eklavaya />} />
           </Routes>
-
-          {/* <Portfolio /> */}
 
           <Footer />
         </div>

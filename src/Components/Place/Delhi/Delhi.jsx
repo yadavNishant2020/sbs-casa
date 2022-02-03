@@ -34,7 +34,9 @@ export default function Delhi() {
         {data.map((d) => (
           <div className="item">
             <div className="imgContainer">
-              <img src={d.img} alt="" />
+              <Link to={`/delhi/${d.id}`}>
+                <img src={d.img} alt="" />
+              </Link>
             </div>
             <h3>{d.title}</h3>
           </div>

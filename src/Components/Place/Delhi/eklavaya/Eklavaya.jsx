@@ -1,14 +1,15 @@
 import React from "react";
-import "./eklavaya.scss";
+import "../../hostel.scss";
 import "../../../Intro/intro.scss";
 import SimpleImageSlider from "react-simple-image-slider";
+import { useParams } from "react-router";
 
 const images = [
-  { url: "/images/hostels/delhi/eklavaya/image0.jpeg" },
-  { url: "/images/hostels/delhi/eklavaya/image1.jpg" },
-  { url: "/images/hostels/delhi/eklavaya/image2.jpg" },
+  { url: "/images/hostels/delhi/eklavaya/image1.jpeg" },
   { url: "/images/hostels/delhi/eklavaya/image3.jpg" },
-  { url: "/images/hostels/delhi/eklavaya/image2.jpg" },
+  { url: "/images/hostels/delhi/eklavaya/image6.jpg" },
+  { url: "/images/hostels/delhi/eklavaya/image7.jpeg" },
+  { url: "/images/hostels/delhi/eklavaya/image5.jpg" },
 ];
 
 const demos = {
@@ -23,6 +24,8 @@ function Iframe(props) {
   );
 }
 function Eklavaya() {
+  const { id } = useParams();
+  console.log(id);
   return (
     <div>
       <div>
@@ -50,7 +53,7 @@ function Eklavaya() {
           <div className="map">
             <div className="address">
               <p>
-                House no.-30 , Begampur, near Begampur Gurudwara, Malviya Nagar,
+                House no.-33 , Begampur, near Begampur Gurudwara, Malviya Nagar,
                 New Delhi -110017
               </p>
               <div id="btnMain">
@@ -68,46 +71,43 @@ function Eklavaya() {
           <div className="items-wrap">
             <div className="itm">
               <div className="imgg">
-                <img src="\images\New folder\sofa.jpg" alt="" />
+                <img src="\images\hostels\furniture.png" alt="" />
               </div>
-
               <p>Bed with Matrress</p>
             </div>
 
             <div className="itm">
               <div className="imgg">
-                <img src="\images\New folder\internat.jpg" alt="" />
+                <img src="\images\hostels\almirah.png" alt="" />
               </div>
-              {/* <img src="\images\New folder\internat.jpg" alt="" /> */}
               <p>Individual Almirah</p>
             </div>
             <div className="itm">
               <div className="imgg">
-                <img src="\images\New folder\internat.jpg" alt="" />
+                <img src="\images\hostels\refrigerator.png" alt="" />
               </div>
-              {/* <img src="\images\New folder\internat.jpg" alt="" /> */}
               <p>Refrigerator</p>
             </div>
 
             <div className="itm">
               <div className="imgg">
-                <img src="\images\New folder\tech.jpg" alt="" />
+                <img src="\images\hostels\study-desk.png" alt="" />
               </div>
-              {/* <img src="\images\New folder\tech.jpg" alt="" /> */}
               <p>Study Table</p>
             </div>
             <div className="itm">
               <div className="imgg">
-                <img src="\images\New folder\tech.jpg" alt="" />
+                <img
+                  src="\images\hostels\washroom-shower-bathroom.png"
+                  alt=""
+                />
               </div>
-              {/* <img src="\images\New folder\tech.jpg" alt="" /> */}
               <p> Attached Washroom with Geyser</p>
             </div>
             <div className="itm">
               <div className="imgg">
-                <img src="\images\New folder\tech.jpg" alt="" />
+                <img src="\images\hostels\ac.png" alt="" />
               </div>
-              {/* <img src="\images\New folder\tech.jpg" alt="" /> */}
               <p>Fully Air Conditioned</p>
             </div>
           </div>
@@ -119,58 +119,50 @@ function Eklavaya() {
           <div className="items-wrap">
             <div className="itm">
               <div className="imgg">
-                <img src="\images\New folder\power.jpg" alt="" />
+                <img src="\images\hostels\sustainable-energy.png" alt="" />
               </div>
-              {/* <img src="\images\New folder\power.jpg" alt="" /> */}
               <p>24/7 Power Backup</p>
             </div>
             <div className="itm">
               <div className="imgg">
-                <img src="\images\New folder\clean.jpg" alt="" />
+                <img src="\images\hostels\mop.png" alt="" />
               </div>
-              {/* <img src="\images\New folder\clean.jpg" alt="" /> */}
-              <p>Professional Housekeeping</p>
+              <p> Housekeeping</p>
             </div>
             <div className="itm">
               <div className="imgg">
-                <img src="\images\New folder\internat.jpg" alt="" />
+                <img src="\images\hostels\cctv-camera.png" alt="" />
               </div>
-              {/* <img src="\images\New folder\internat.jpg" alt="" /> */}
               <p>CCTV Camera</p>
             </div>
             <div className="itm">
               <div className="imgg">
-                <img src="\images\New folder\internat.jpg" alt="" />
+                <img src="\images\hostels\internet.png" alt="" />
               </div>
-              {/* <img src="\images\New folder\internat.jpg" alt="" /> */}
               <p>High Speed Internet</p>
             </div>
             <div className="itm">
               <div className="imgg">
-                <img src="\images\New folder\internat.jpg" alt="" />
+                <img src="\images\hostels\drink-water.png" alt="" />
               </div>
-              {/* <img src="\images\New folder\internat.jpg" alt="" /> */}
               <p>RO Drinking Water</p>
             </div>
             <div className="itm">
               <div className="imgg">
-                <img src="\images\New folder\internat.jpg" alt="" />
+                <img src="\images\hostels\restaurant.png" alt="" />
               </div>
-              {/* <img src="\images\New folder\internat.jpg" alt="" /> */}
               <p>3 Time Delicious Meals</p>
             </div>
             <div className="itm">
               <div className="imgg">
-                <img src="\images\New folder\laundary.jpg" alt="" />
+                <img src="\images\hostels\laundry.png" alt="" />
               </div>
-              {/* <img src="\images\New folder\laundary.jpg" alt="" /> */}
               <p>Laundry and Ironing</p>
             </div>
             <div className="itm">
               <div className="imgg">
-                <img src="\images\New folder\laundary.jpg" alt="" />
+                <img src="\images\hostels\lock.png" alt="" />
               </div>
-              {/* <img src="\images\New folder\laundary.jpg" alt="" /> */}
               <p>Hightech Lock</p>
             </div>
           </div>

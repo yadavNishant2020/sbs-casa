@@ -4,9 +4,11 @@ import "../../../Intro/intro.scss";
 import SimpleImageSlider from "react-simple-image-slider";
 
 const images = [
-  { url: "/images/hostels/delhi/karana/img1.jpg" },
-  { url: "/images/hostels/delhi/karana/img2.jpg" },
-  { url: "/images/hostels/delhi/karana/img3.jpg" },
+  { url: "/images/hostels/delhi/karana/image0.jpeg" },
+  { url: "/images/hostels/delhi/karana/image1.jpg" },
+  { url: "/images/hostels/delhi/karana/image2.jpg" },
+  { url: "/images/hostels/delhi/karana/image3.jpg" },
+  { url: "/images/hostels/delhi/karana/image2.jpg" },
 ];
 
 const demos = {
@@ -20,7 +22,7 @@ function Iframe(props) {
     />
   );
 }
-function Karana() {
+function Mansheel() {
   return (
     <div>
       <div>
@@ -34,7 +36,7 @@ function Karana() {
       </div>
       <div className="about" id="about">
         <div className="headingsss">
-          <h1>SBS Karan</h1>
+          <h1>SBS karana</h1>
         </div>
         <div className="detailss">
           <ul>
@@ -48,8 +50,8 @@ function Karana() {
           <div className="map">
             <div className="address">
               <p>
-                44A-4 Kalu sarai, Begampur, near Begampur Gurudwara, Malviya
-                Nagar, New Delhi -110017
+                House no.-30 , Begampur, near Begampur Gurudwara, Malviya Nagar,
+                New Delhi -110017
               </p>
               <div id="btnMain">
                 <div id="btnBox">BOOK NOW</div>
@@ -294,4 +296,4 @@ function Karana() {
   );
 }
 
-export default Karana;
+export default Mansheel;

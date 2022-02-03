@@ -2,16 +2,17 @@ import React from "react";
 import "../../hostel.scss";
 import "../../../Intro/intro.scss";
 import SimpleImageSlider from "react-simple-image-slider";
+import { useParams } from "react-router";
 
 const images = [
-  { url: "/images/hostels/delhi/karana/img1.jpg" },
-  { url: "/images/hostels/delhi/karana/img2.jpg" },
-  { url: "/images/hostels/delhi/karana/img3.jpg" },
+  { url: "/images/hostels/delhi/laxman/image0.jpg" },
+  { url: "/images/hostels/delhi/laxman/image1.jpg" },
+  { url: "/images/hostels/delhi/laxman/image2.jpg" },
 ];
 
 const demos = {
   plotly:
-    '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.0810755487582!2d77.20580865062585!3d28.537282695050404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3ef0280e6e7%3A0x5b5d9117cf370f23!2sSBS%20Casa%20(Boys%20PG)!5e0!3m2!1sen!2sin!4v1643828994460!5m2!1sen!2sin"  background-size: contain; width="800" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
+    '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.0810755487582!2d77.20580865062585!3d28.537282695050404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3ef0280e6e7%3A0x5b5d9117cf370f23!2sSBS%20Casa%20(Boys%20PG)!5e0!3m2!1sen!2sin!4v1643828994460!5m2!1sen!2sin" width="800" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
 };
 function Iframe(props) {
   return (
@@ -20,7 +21,9 @@ function Iframe(props) {
     />
   );
 }
-function Karana() {
+function Laxman() {
+  const { id } = useParams();
+  console.log(id);
   return (
     <div>
       <div>
@@ -34,7 +37,7 @@ function Karana() {
       </div>
       <div className="about" id="about">
         <div className="headingsss">
-          <h1>SBS Karan</h1>
+          <h1>SBS Laxman</h1>
         </div>
         <div className="detailss">
           <ul>
@@ -48,7 +51,7 @@ function Karana() {
           <div className="map">
             <div className="address">
               <p>
-                44A-4 Kalu sarai, Begampur, near Begampur Gurudwara, Malviya
+                19B/1,First Floor, Begampur, near Begampur Gurudwara, Malviya
                 Nagar, New Delhi -110017
               </p>
               <div id="btnMain">
@@ -294,4 +297,4 @@ function Karana() {
   );
 }
 
-export default Karana;
+export default Laxman;

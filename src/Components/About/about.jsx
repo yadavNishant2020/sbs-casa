@@ -24,28 +24,28 @@ function about() {
       </div>
       <div className="place">
         <ul>
-          <li className="delhi">
-            <img src="images/delhi.png" alt="" srcset="" />
+          <li className="delhi wrap">
             <Link exact to="/delhi">
-              New Delhi
+              <img src="images/New Folder/delhi.png" alt="" srcset="" />
+              <p> New Delhi</p>
             </Link>
           </li>
-          <li className="noida">
-            <img src="images/noida.png" alt="" srcset="" />
+          <li className="noida wrap">
             <Link exact to="/noida">
-              Noida
+              <img src="images/New Folder/noida.png" alt="" srcset="" />
+              <p> Noida</p>
             </Link>
           </li>
-          <li className="delhi">
-            <img src="images/gurgaon.png" alt="" srcset="" />
+          <li className="delhi wrap">
             <Link exact to="/gurgaon">
-              Gurgaon
+              <img src="images/New Folder/gurgaon.png" alt="" srcset="" />
+              <p> Gurgaon</p>
             </Link>
           </li>
-          <li className="delhi">
-            <img src="images/faridabad.png" alt="" srcset="" />
+          <li className="delhi wrap">
             <Link exact to="/faridabad">
-              Faridabad
+              <img src="images/New Folder/faridabad.png" alt="" srcset="" />
+              <p>Faridabad</p>
             </Link>
           </li>
         </ul>
