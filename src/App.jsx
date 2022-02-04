@@ -45,6 +45,7 @@ function App() {
                 </div>
               }
             ></Route>
+            <Route exact path="/contact" element={<Contact />} />
             <Route exact path="/delhi" element={<Delhi />} />
             <Route exact path="/noida" element={<Noida />} />
             <Route exact path="/gurgaon" element={<Gurgaon />} />

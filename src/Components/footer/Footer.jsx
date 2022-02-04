@@ -1,5 +1,6 @@
 import React from "react";
 import "./footer.css";
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div>
@@ -15,18 +16,26 @@ function Footer() {
           <div class="site-links">
             <span>Location</span>
             <ul class="list-links">
-              <li>
-                <a>Delhi</a>
-              </li>
-              <li>
-                <a>Noida</a>
-              </li>
-              <li>
-                <a>Gurgaon</a>
-              </li>
-              <li>
-                <a>Faridabad</a>
-              </li>
+              <Link to="/delhi">
+                <li>
+                  <a>Delhi</a>
+                </li>
+              </Link>
+              <Link to="/noida">
+                <li>
+                  <a>Noida</a>
+                </li>
+              </Link>
+              <Link to="/gurgaon">
+                <li>
+                  <a>Gurgaon</a>
+                </li>
+              </Link>
+              <Link to="/faridabad">
+                <li>
+                  <a>Faridabad</a>
+                </li>
+              </Link>
             </ul>
           </div>
           <div class="adr-email">

@@ -1,5 +1,6 @@
+import React from "react";
 import "./intro.scss";
-
+import { Link } from "react-router-dom";
 export default function Intro() {
   return (
     <div className="intro" id="intro">
@@ -12,10 +13,12 @@ export default function Intro() {
             are available at genuine price and great comfort with all luxury you
             want.
           </p>
-          <div id="btnMain">
-            <div id="btnBox">BOOK NOW</div>
-            <div id="btnBottom"></div>
-          </div>
+          <Link to="/contact">
+            <div id="btnMain">
+              <div id="btnBox">BOOK NOW</div>
+              <div id="btnBottom"></div>
+            </div>
+          </Link>
         </div>
       </div>
       <div className="right">

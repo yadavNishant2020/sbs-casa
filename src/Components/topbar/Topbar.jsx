@@ -6,7 +6,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
       <div className="wrappers">
         <div className="lefts">
           <div href="#intro" className="logos">
-            <Link exact to="/">
+            <Link exact to="/#">
               <img src="/images/logop.png" alt="" />
             </Link>
           </div>

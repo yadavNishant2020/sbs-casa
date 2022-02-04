@@ -60,7 +60,9 @@ hr {
 .site-links span {
   font-family: "Gruppo", cursive;
 }
-
+.site-links ul li:hover {
+  color: #00a9c7;
+}
 ul.list-links {
   list-style-type: none;
 }
