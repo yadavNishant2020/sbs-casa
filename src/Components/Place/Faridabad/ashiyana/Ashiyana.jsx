@@ -45,7 +45,10 @@ function Ashiyana() {
           </ul>
           <div className="map">
             <div className="address">
-              <p>H.no. - 19/29, U-Block, Dlf Phase 3</p>
+              <p>
+                A 2360, First Floor, Green Field, Gate No.6, Faridabad, Haryana
+                - 121003
+              </p>
               <div id="btnMain">
                 <div id="btnBox">BOOK NOW</div>
                 <div id="btnBottom"></div>

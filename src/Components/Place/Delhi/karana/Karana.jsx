@@ -11,7 +11,7 @@ const images = [
 
 const demos = {
   plotly:
-    '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.0810755487582!2d77.20580865062585!3d28.537282695050404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3ef0280e6e7%3A0x5b5d9117cf370f23!2sSBS%20Casa%20(Boys%20PG)!5e0!3m2!1sen!2sin!4v1643828994460!5m2!1sen!2sin"  background-size: contain; width="800" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
+    '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.9195721267547!2d77.20211891508055!3d28.542137082453543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x692af66e5ead9990!2zMjjCsDMyJzMxLjciTiA3N8KwMTInMTUuNSJF!5e0!3m2!1sen!2sin!4v1644007504728!5m2!1sen!2sin"  background-size: contain; width="800" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
 };
 function Iframe(props) {
   return (
@@ -38,18 +38,16 @@ function Karana() {
         </div>
         <div className="detailss">
           <ul>
-            <li>500m from Shri Aurobindo College</li>
-            <li>700m from Made Easy</li>
-            <li>700m from Fiitzee</li>
-            <li>700m from Narayana IT Academy</li>
-            <li>800m from Hauz Khas Metro Station</li>
-            <li>1200m from Malviya Nagar Metro Station</li>
+            <li>50m from Made Easy</li>
+            <li>200m from Fiitzee</li>
+            <li>300m from Narayana IT Academy</li>
+            <li>500m from IIT university </li>
+            <li>500m from Hauz Khas Metro</li>
           </ul>
           <div className="map">
             <div className="address">
               <p>
-                44A-4 Kalu sarai, Begampur, near Begampur Gurudwara, Malviya
-                Nagar, New Delhi -110017
+                44A/4, Kalu Sarai, Near Made Easy Institute, New Delhi - 110016
               </p>
               <div id="btnMain">
                 <div id="btnBox">BOOK NOW</div>
