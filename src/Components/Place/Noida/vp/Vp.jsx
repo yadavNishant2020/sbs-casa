@@ -4,10 +4,10 @@ import "../../../Intro/intro.scss";
 import SimpleImageSlider from "react-simple-image-slider";
 
 const images = [
-  { url: "/images/hostels/Gurgaon/guru/img1.jpg" },
-  { url: "/images/hostels/Gurgaon/guru/unnamed.jpg" },
-  { url: "/images/hostels/Gurgaon/guru/img3.jpg" },
-  { url: "/images/hostels/Gurgaon/guru/img4.jpg" },
+  { url: "/images/hostels/noida/vp/img1.jpg" },
+  { url: "/images/hostels/noida/vp/img2.jpg" },
+  { url: "/images/hostels/noida/vp/img3.jpg" },
+  { url: "/images/hostels/noida/vp/img4.jpg" },
 ];
 
 const demos = {
@@ -171,7 +171,7 @@ function Vp() {
                 <th>Flat share and Private</th>
                 <th>Service Apartment</th>
                 <th>
-                  <img src="/images/logo.png" alt="" srcset="" />
+                  <img src="/images/logop.png" alt="" srcset="" />
                 </th>
               </tr>
             </thead>

@@ -4,10 +4,10 @@ import "../../../Intro/intro.scss";
 import SimpleImageSlider from "react-simple-image-slider";
 
 const images = [
-  { url: "/images/hostels/Gurgaon/guru/img1.jpg" },
-  { url: "/images/hostels/Gurgaon/guru/unnamed.jpg" },
-  { url: "/images/hostels/Gurgaon/guru/img3.jpg" },
-  { url: "/images/hostels/Gurgaon/guru/img4.jpg" },
+  { url: "/images/hostels/gurgaon/guru/img1.jpg" },
+  { url: "/images/hostels/gurgaon/guru/unnamed.jpg" },
+  { url: "/images/hostels/gurgaon/guru/img3.jpg" },
+  { url: "/images/hostels/gurgaon/guru/img4.jpg" },
 ];
 
 const demos = {
@@ -169,7 +169,7 @@ function Guru() {
                 <th>Flat share and Private</th>
                 <th>Service Apartment</th>
                 <th>
-                  <img src="/images/logo.png" alt="" srcset="" />
+                  <img src="/images/logop.png" alt="" srcset="" />
                 </th>
               </tr>
             </thead>

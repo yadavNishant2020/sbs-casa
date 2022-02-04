@@ -26,25 +26,25 @@ function about() {
         <ul>
           <li className="delhi wrap">
             <Link exact to="/delhi">
-              <img src="images/New Folder/delhi.png" alt="" srcset="" />
+              <img src="/images/delhi.png" alt="" srcset="" />
               <p> New Delhi</p>
             </Link>
           </li>
           <li className="noida wrap">
             <Link exact to="/noida">
-              <img src="images/New Folder/noida.png" alt="" srcset="" />
+              <img src="/images/noida.png" alt="" srcset="" />
               <p> Noida</p>
             </Link>
           </li>
           <li className="delhi wrap">
             <Link exact to="/gurgaon">
-              <img src="images/New Folder/gurgaon.png" alt="" srcset="" />
+              <img src="/images/gurgaon.png" alt="" srcset="" />
               <p> Gurgaon</p>
             </Link>
           </li>
           <li className="delhi wrap">
             <Link exact to="/faridabad">
-              <img src="images/New Folder/faridabad.png" alt="" srcset="" />
+              <img src="/images/faridabad.png" alt="" srcset="" />
               <p>Faridabad</p>
             </Link>
           </li>
