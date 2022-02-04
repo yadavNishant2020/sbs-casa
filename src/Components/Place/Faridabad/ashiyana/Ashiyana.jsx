@@ -12,7 +12,7 @@ const images = [
 
 const demos = {
   plotly:
-    '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.0810755487582!2d77.20580865062585!3d28.537282695050404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3ef0280e6e7%3A0x5b5d9117cf370f23!2sSBS%20Casa%20(Boys%20PG)!5e0!3m2!1sen!2sin!4v1643828994460!5m2!1sen!2sin"  background-size: contain; width="800" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
+    '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.486391965425!2d77.29379371507883!3d28.46489518248425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe33495e72c377326!2zMjjCsDI3JzUzLjYiTiA3N8KwMTcnNDUuNSJF!5e0!3m2!1sen!2sin!4v1643998439718!5m2!1sen!2sin"  background-size: contain; width="800" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
 };
 function Iframe(props) {
   return (
@@ -39,19 +39,13 @@ function Ashiyana() {
         </div>
         <div className="detailss">
           <ul>
-            <li>500m from Shri Aurobindo College</li>
-            <li>700m from Made Easy</li>
-            <li>700m from Fiitzee</li>
-            <li>700m from Narayana IT Academy</li>
-            <li>800m from Hauz Khas Metro Station</li>
-            <li>1200m from Malviya Nagar Metro Station</li>
+            <li>Nearby Omaxe -10 min walking distance</li>
+            <li>10 minutes from NHPC metro station </li>
+            <li>12 -15 minutes from Sarai Metro station</li>
           </ul>
           <div className="map">
             <div className="address">
-              <p>
-                A 2360, First Floor, Green Field Gate No.6, Faridabad, Haryana -
-                121003
-              </p>
+              <p>H.no. - 19/29, U-Block, Dlf Phase 3</p>
               <div id="btnMain">
                 <div id="btnBox">BOOK NOW</div>
                 <div id="btnBottom"></div>
@@ -174,7 +168,7 @@ function Ashiyana() {
                 <th>Flat share and Private</th>
                 <th>Service Apartment</th>
                 <th>
-                  <img src="images/logop.png" alt="" srcset="" />
+                  <img src="/images/logop.png" alt="" srcset="" />
                 </th>
               </tr>
             </thead>

@@ -13,7 +13,7 @@ const images = [
 
 const demos = {
   plotly:
-    '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.0810755487582!2d77.20580865062585!3d28.537282695050404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3ef0280e6e7%3A0x5b5d9117cf370f23!2sSBS%20Casa%20(Boys%20PG)!5e0!3m2!1sen!2sin!4v1643828994460!5m2!1sen!2sin"  background-size: contain; width="800" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
+    '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.0641262993854!2d77.20578861508046!3d28.537792182455316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5bf87115d1a75b71!2zMjjCsDMyJzE2LjEiTiA3N8KwMTInMjguNyJF!5e0!3m2!1sen!2sin!4v1643996572584!5m2!1sen!2sin"   background-size: contain; width="800" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
 };
 function Iframe(props) {
   return (
@@ -175,7 +175,7 @@ function Ramsheela() {
                 <th>Flat share and Private</th>
                 <th>Service Apartment</th>
                 <th>
-                  <img src="images/logop.png" alt="" srcset="" />
+                  <img src="/images/logop.png" alt="" srcset="" />
                 </th>
               </tr>
             </thead>

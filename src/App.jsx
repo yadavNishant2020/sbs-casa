@@ -2,7 +2,6 @@ import Topbar from "./Components/topbar/Topbar";
 import Intro from "./Components/Intro/intro";
 import About from "./Components/About/about";
 import Contact from "./Components/Contact/contact";
-
 import { useState } from "react";
 import Menu from "./Components/menu/Menu";
 import Team from "./Components/team/Team";
@@ -15,7 +14,7 @@ import RamSheela from "./Components/Place/Delhi/ramSheela/RamSheela";
 import Drona from "./Components/Place/Delhi/drona/Drona";
 import Karana from "./Components/Place/Delhi/karana/Karana";
 import Eklavaya from "./Components/Place/Delhi/eklavaya/Eklavaya";
-import Vp from "./Components/Place/Gurgaon/guru/Guru";
+import Vp from "./Components/Place/Noida/vp/Vp";
 import Guru from "./Components/Place/Gurgaon/guru/Guru";
 import Mansheel from "./Components/Place/Faridabad/mansheel/Mansheel";
 import Akm from "./Components/Place/Faridabad/akm/Akm";
@@ -69,7 +68,6 @@ function App() {
               element={<Ashiyana />}
             />
           </Routes>
-
           <Footer />
         </div>
       </div>

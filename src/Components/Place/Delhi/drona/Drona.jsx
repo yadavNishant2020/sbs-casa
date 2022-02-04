@@ -176,7 +176,7 @@ function drona() {
                 <th>Flat share and Private</th>
                 <th>Service Apartment</th>
                 <th>
-                  <img src="images/logop.png" alt="" srcset="" />
+                  <img src="/images/logop.png" alt="" srcset="" />
                 </th>
               </tr>
             </thead>

@@ -138,10 +138,10 @@
 
   h1 {
     font-size: 3rem;
-
+    padding-left: 10%;
     align-self: center;
     color: #4c3c69;
-    padding-left: 22%;
+
     width: 100vw;
   }
 }
@@ -152,9 +152,10 @@
 .items-wrap {
   display: flex;
   flex-direction: row;
-  margin: 2% 2%;
-  background-color: #fafafc;
+  margin: 2% 5%;
+  background-color: #f3f9ff;
   border-radius: 5px;
+  padding: 1%;
 
   .itm {
     display: flex;

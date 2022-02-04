@@ -10,7 +10,7 @@ function Footer() {
       <footer>
         <div class="row-footer">
           <div class="site-logo">
-            <img src="images/logo1.png" alt="" />
+            <img src="/images/logo1.png" alt="" />
           </div>
           <div class="site-links">
             <span>Location</span>

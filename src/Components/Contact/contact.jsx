@@ -104,7 +104,7 @@ export default function Contact() {
               <div class="contact-info">
                 <div class="contact-info-item">
                   <div class="contact-info-icon">
-                    <img src="images/mail1.gif" alt="" />
+                    <img src="images/mail.gif" alt="" />
                   </div>
                   <div class="contact-info-text">
                     <span>Hello@sbscasa</span>
@@ -116,7 +116,7 @@ export default function Contact() {
               <div class="contact-info">
                 <div class="contact-info-item">
                   <div class="contact-info-icon phone">
-                    <img src="images/call1.gif" alt="" />
+                    <img src="images/call.gif" alt="" />
                   </div>
                   <div class="contact-info-text ">
                     <span>1800-SBS-CASA</span>

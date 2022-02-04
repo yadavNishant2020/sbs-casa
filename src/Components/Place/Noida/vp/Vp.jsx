@@ -12,7 +12,7 @@ const images = [
 
 const demos = {
   plotly:
-    '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.4368423501073!2d77.09368231507956!3d28.496501882471637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc2cd31efe98620e9!2zMjjCsDI5JzQ3LjQiTiA3N8KwMDUnNDUuMSJF!5e0!3m2!1sen!2sin!4v1643997625968!5m2!1sen!2sin"  background-size: contain; width="800" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
+    '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.9551265210507!2d77.40557951507989!3d28.51099778246595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x49429811707cfb9a!2zMjjCsDMwJzM5LjYiTiA3N8KwMjQnMjguMCJF!5e0!3m2!1sen!2sin!4v1643997376977!5m2!1sen!2sin"  background-size: contain; width="800" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
 };
 function Iframe(props) {
   return (
@@ -21,7 +21,7 @@ function Iframe(props) {
     />
   );
 }
-function Guru() {
+function Vp() {
   return (
     <div>
       <div>
@@ -35,18 +35,20 @@ function Guru() {
       </div>
       <div className="about" id="about">
         <div className="headingsss">
-          <h1>SBS Guru</h1>
+          <h1>SBS VP</h1>
         </div>
         <div className="detailss">
           <ul>
-            <li>500m from Dlf Phase 3 Rapid Metro Station</li>
-            <li>300m from Accentur Building </li>
-            <li>2Km from Cyber Hub </li>
-            <li>3Km from Treebo Trend Coral Tree</li>
+            <li>500m from Shri Aurobindo College</li>
+            <li>700m from Made Easy</li>
+            <li>700m from Fiitzee</li>
+            <li>700m from Narayana IT Academy</li>
+            <li>800m from Hauz Khas Metro Station</li>
+            <li>1200m from Malviya Nagar Metro Station</li>
           </ul>
           <div className="map">
             <div className="address">
-              <p>H.no.19/29, U-Block, Dlf Phase 3</p>
+              <p>B1- 506, Purvanchal royal park, sector 137, Noida 201305</p>
               <div id="btnMain">
                 <div id="btnBox">BOOK NOW</div>
                 <div id="btnBottom"></div>
@@ -290,4 +292,4 @@ function Guru() {
   );
 }
 
-export default Guru;
+export default Vp;
