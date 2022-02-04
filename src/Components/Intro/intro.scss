@@ -7,7 +7,9 @@
   height: 100vh;
   padding: 0 50px;
   display: flex;
-
+  @media only screen and (max-width: 600px) {
+    padding: 0 20px;
+  }
   @include mobile {
     flex-direction: column;
     align-items: center;
@@ -19,7 +21,9 @@
     align-items: center;
     justify-content: center;
     align-content: center;
-
+    @media only screen and (max-width: 600px) {
+      padding: 0 20px;
+    }
     .name {
       h1 {
         color: white;
@@ -27,6 +31,9 @@
         align-self: center;
         padding-bottom: 5%;
         font-family: "Playfair Display SC", serif;
+        @media only screen and (max-width: 600px) {
+          font-size: 2.2rem;
+        }
       }
       p {
         font-family: "Open Sans", sans-serif;
@@ -37,6 +44,10 @@
         line-height: 1.8rem;
         background: transparent;
         letter-spacing: 0.7px;
+        @media only screen and (max-width: 600px) {
+          font-size: 0.7rem;
+          line-height: 1rem;
+        }
       }
     }
     @import url("https://fonts.googleapis.com/css?family=Ubuntu:500");
@@ -47,9 +58,13 @@
       position: relative;
       margin-top: 5%;
       perspective: 800px;
-
       cursor: pointer;
       overflow: hidden;
+      @media only screen and (max-width: 600px) {
+        width: 100px;
+        height: 35px;
+        margin-top: 10%;
+      }
     }
     #btnBox {
       width: 100%;
@@ -65,6 +80,10 @@
       box-shadow: 0 15px 30px rgba(59, 2, 97, 0.4);
       transition: all 0.5s;
       border-radius: 5px;
+      @media only screen and (max-width: 600px) {
+        font-size: 15px;
+        line-height: 35px;
+      }
     }
     #btnBottom {
       width: 100%;
@@ -113,5 +132,10 @@
   margin-left: 5%;
   img {
     width: 100%;
+    @media only screen and (max-width: 600px) {
+      display: block;
+      width: 100%;
+      margin-bottom: 40%;
+    }
   }
 }
