@@ -22,9 +22,6 @@
     font-size: 4rem;
     margin-top: 20px;
     color: #677a83;
-    @media only screen and (max-width: 600px) {
-      font-size: 15px;
-    }
   }
 
   .containers {
@@ -62,6 +59,9 @@
         background-color: $mainColor;
         color: #ffffff;
         font-weight: 200;
+        @media only screen and (max-width: 600px) {
+          font-size: 15px;
+        }
       }
       .imgContainer {
         width: 60%;
