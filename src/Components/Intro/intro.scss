@@ -8,7 +8,8 @@
   padding: 0 50px;
   display: flex;
   @media only screen and (max-width: 600px) {
-    padding: 0 20px;
+    padding: 50px 20px;
+    height: auto;
   }
   @include mobile {
     flex-direction: column;
@@ -70,7 +71,7 @@
       width: 100%;
       height: 100%;
       display: block;
-      background-color: #4dc3e0;
+      background-color: #adced4;
       font-family: fantasy;
       font-size: 32px;
       color: #ffffff;
@@ -97,7 +98,7 @@
     }
     #btnMain:hover #btnBox {
       color: #ffff;
-      background-color: #93b5c6;
+      background-color: #ad7bcee3;
       transform: rotateX(25deg);
       text-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
       box-shadow: 0 25px 30px rgba(59, 2, 97, 0.4);
@@ -135,7 +136,7 @@
     @media only screen and (max-width: 600px) {
       display: block;
       width: 100%;
-      margin-bottom: 40%;
+      padding-top: 4%;
     }
   }
 }

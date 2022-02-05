@@ -59,6 +59,9 @@
         background-color: $mainColor;
         color: #ffffff;
         font-weight: 200;
+        @media only screen and (max-width: 600px) {
+          font-size: 15px;
+        }
       }
       .imgContainer {
         width: 60%;

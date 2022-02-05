@@ -8,6 +8,9 @@ section {
   justify-content: space-between;
   flex-direction: row;
   margin: 0px 5%;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 }
 .contact-info {
   display: inline-block;
@@ -16,6 +19,11 @@ section {
   border-radius: 5%;
   text-align: center;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  @media only screen and (max-width: 600px) {
+    width: 170px;
+    height: 50%;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.25), 0 0px 0px rgba(0, 0, 0, 0.22);
+  }
 }
 
 .contact-info-icon img {
@@ -28,10 +36,16 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #4c3c69;
+  background: #4c3c69c0;
   flex-direction: column;
   padding: 20px;
   height: 20vh;
+  @media only screen and (max-width: 600px) {
+    height: 15vh;
+    margin-bottom: 3%;
+    border-radius: 5%;
+    padding: 15px;
+  }
 }
 .contact-info-text {
   font-family: "Open Sans", sans-serif;
@@ -39,6 +53,10 @@ section {
   font-weight: 300;
   line-height: 2rem;
   color: white;
+  @media only screen and (max-width: 600px) {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
 }
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
 
@@ -53,23 +71,29 @@ section {
 }
 
 .container {
-  background-color: white;
   border-radius: 5px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 20px 40px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   position: relative;
   overflow: hidden;
   width: 768px;
   max-width: 100%;
   min-height: 480px;
   min-width: 370px;
+  @media only screen and (max-width: 600px) {
+    box-shadow: 0;
+    min-height: 280px;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.25), 0 0px 0px rgba(0, 0, 0, 0.22);
+  }
 }
 
 h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   font-family: "Roboto", sans-serif;
-
   font-weight: 250;
+  @media only screen and (max-width: 600px) {
+    font-size: 35px;
+  }
 }
 .form-container {
   display: flex;
@@ -122,9 +146,9 @@ input,
 textarea {
   background-color: #eee;
   border: none;
-  padding: 12px 15px;
+  padding: 12px 5px;
   margin: 8px 0;
-  width: 100%;
+  width: 95%;
   font-size: 0.8rem;
 }
 

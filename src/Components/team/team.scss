@@ -7,9 +7,15 @@ a {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 5% 0px;
+  padding: 4% 0px;
   background-color: #4c3c69;
   background-image: linear-gradient(326deg, #afc8d4bb 0%, #4c3c69c9 94%);
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 }
 .team-heading {
   font-size: 2.2rem;
@@ -23,6 +29,9 @@ a {
   border-bottom: 1px solid #ffffff;
   text-align: center;
   font-family: "Roboto";
+  @media only screen and (max-width: 600px) {
+    font-size: 1.5rem;
+  }
 }
 
 .member-box {
@@ -32,12 +41,24 @@ a {
   cursor: pointer;
   overflow: hidden;
   height: 98%;
+  @media only screen and (max-width: 600px) {
+    height: 180px;
+    width: 120px;
+    object-fit: cover;
+    margin-bottom: 2%;
+    margin-left: 2%;
+  }
 }
 .member-img {
   width: 362px;
   height: 442px;
   position: relative;
   overflow: hidden;
+  @media only screen and (max-width: 600px) {
+    width: auto;
+    height: 80%;
+    object-fit: cover;
+  }
 }
 .member-img img {
   width: 100%;
@@ -45,6 +66,11 @@ a {
   object-position: center;
   object-fit: cover;
   overflow: hidden;
+  @media only screen and (max-width: 600px) {
+    width: 120px;
+
+    object-fit: cover;
+  }
 }
 .hover-img {
   position: absolute;
@@ -58,6 +84,9 @@ a {
 .member-box:hover .hover-img {
   display: block;
   animation: fade 1s;
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 }
 @keyframes fade {
   0% {
@@ -69,7 +98,7 @@ a {
 }
 .member-name {
   width: 100%;
-  padding: 20px 0px;
+  padding: 10px 0px;
   background-color: #ffffff;
   display: flex;
   align-items: center;
@@ -86,10 +115,16 @@ a {
 }
 .member-name h5 {
   font-weight: 500;
+  @media only screen and (max-width: 600px) {
+    font-size: 8px;
+  }
 }
 .member-name h3 {
   text-transform: uppercase;
   font-weight: 800;
+  @media only screen and (max-width: 600px) {
+    font-size: 11px;
+  }
 }
 .team-box-container {
   display: flex;
@@ -99,4 +134,9 @@ a {
   background-color: transparent;
   overflow: hidden;
   width: 80%;
+  @media only screen and (max-width: 600px) {
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: center;
+  }
 }

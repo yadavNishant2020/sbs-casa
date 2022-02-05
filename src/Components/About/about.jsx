@@ -27,7 +27,7 @@ function about() {
           <li className="delhi wrap">
             <Link exact to="/delhi">
               <img src="/images/delhi.png" alt="" srcset="" />
-              <p> New Delhi</p>
+              <p>Delhi</p>
             </Link>
           </li>
           <li className="noida wrap">

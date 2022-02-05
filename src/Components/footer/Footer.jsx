@@ -1,5 +1,5 @@
 import React from "react";
-import "./footer.css";
+import "./footer.scss";
 import { Link } from "react-router-dom";
 function Footer() {
   return (
@@ -43,7 +43,7 @@ function Footer() {
             <ul class="">
               <li class="location">
                 <a>
-                  <i class="fas fa-map-pin"></i>Malviya Nagar. New delhi, India
+                  <i class="fas fa-map-pin"></i>Malviya Nagar, New delhi, India
                 </a>
               </li>
               <li class="email">
