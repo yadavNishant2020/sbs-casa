@@ -13,10 +13,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  @media only screen and (max-width: 600px) {
-    width: 200px;
-    right: -200px;
-  }
 
   &.active {
     right: 0;
