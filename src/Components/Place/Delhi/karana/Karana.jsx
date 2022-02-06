@@ -1,12 +1,27 @@
 import React from "react";
 import "../../hostel.scss";
 import "../../../Intro/intro.scss";
-import SimpleImageSlider from "react-simple-image-slider";
+import ImageGallery from "react-image-gallery";
 
 const images = [
-  { url: "/images/hostels/delhi/karana/img1.jpg" },
-  { url: "/images/hostels/delhi/karana/img2.jpg" },
-  { url: "/images/hostels/delhi/karana/img3.jpg" },
+  {
+    original:
+      "https://user-images.githubusercontent.com/75436573/152700864-f01bce54-6750-4cda-b18a-f432c5ef4a1f.jpg",
+    thumbnail:
+      "https://user-images.githubusercontent.com/75436573/152700864-f01bce54-6750-4cda-b18a-f432c5ef4a1f.jpg",
+  },
+  {
+    original:
+      "https://user-images.githubusercontent.com/75436573/152700868-53f4a686-4452-4f43-a911-814d717131e5.jpg",
+    thumbnail:
+      "https://user-images.githubusercontent.com/75436573/152700868-53f4a686-4452-4f43-a911-814d717131e5.jpg",
+  },
+  {
+    original:
+      "https://user-images.githubusercontent.com/75436573/152700869-747373b8-99f7-4980-9f9d-0277f45cf364.jpg",
+    thumbnail:
+      "https://user-images.githubusercontent.com/75436573/152700869-747373b8-99f7-4980-9f9d-0277f45cf364.jpg",
+  },
 ];
 
 const demos = {
@@ -24,13 +39,7 @@ function Karana() {
   return (
     <div>
       <div>
-        <SimpleImageSlider
-          width={"100vw"}
-          height={"80vh"}
-          images={images}
-          showBullets={true}
-          showNavs={true}
-        />
+        <ImageGallery items={images} />
       </div>
       <div className="about" id="about">
         <div className="headingsss">
@@ -54,7 +63,9 @@ function Karana() {
                 <div id="btnBottom"></div>
               </div>
             </div>
-            <Iframe iframe={demos["plotly"]} />,
+            <div class="google-maps">
+              <Iframe iframe={demos["plotly"]} autoPlay={true} />,
+            </div>
           </div>
         </div>
         <div className="ameties">

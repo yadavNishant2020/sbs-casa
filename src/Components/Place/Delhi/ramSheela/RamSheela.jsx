@@ -3,56 +3,56 @@ import "../../hostel.scss";
 import "../../../Intro/intro.scss";
 import ImageGallery from "react-image-gallery";
 
-const images = [
-  {
-    original:
-      "https://user-images.githubusercontent.com/75436573/152689359-f8e11d2c-413e-4805-853d-7a00d07c8c8c.jpg",
-    thumbnail:
-      "https://user-images.githubusercontent.com/75436573/152689359-f8e11d2c-413e-4805-853d-7a00d07c8c8c.jpg",
-  },
-  {
-    original:
-      "https://user-images.githubusercontent.com/75436573/152689314-c6b6fafa-f0f0-47c3-a9e2-1bc1af16440a.jpg",
-    thumbnail:
-      "https://user-images.githubusercontent.com/75436573/152689314-c6b6fafa-f0f0-47c3-a9e2-1bc1af16440a.jpg",
-  },
-  {
-    original:
-      "https://user-images.githubusercontent.com/75436573/152689317-3fc058b6-6cca-4c2f-8538-12ebba163495.jpg",
-    thumbnail:
-      "https://user-images.githubusercontent.com/75436573/152689317-3fc058b6-6cca-4c2f-8538-12ebba163495.jpg",
-  },
-  {
-    original:
-      "https://user-images.githubusercontent.com/75436573/152689364-650e95c1-34a7-4cc8-8a2d-5c69654d5565.jpg",
-    thumbnail:
-      "https://user-images.githubusercontent.com/75436573/152689364-650e95c1-34a7-4cc8-8a2d-5c69654d5565.jpg",
-  },
-  {
-    original:
-      "https://user-images.githubusercontent.com/75436573/152689399-9b1b06e4-402d-4704-a06a-0bfb4c1edbfa.jpg",
-    thumbnail:
-      "https://user-images.githubusercontent.com/75436573/152689399-9b1b06e4-402d-4704-a06a-0bfb4c1edbfa.jpg",
-  },
-];
-
-const demos = {
-  plotly:
-    '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.0641262993854!2d77.20578861508046!3d28.537792182455316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5bf87115d1a75b71!2zMjjCsDMyJzE2LjEiTiA3N8KwMTInMjguNyJF!5e0!3m2!1sen!2sin!4v1643996572584!5m2!1sen!2sin"   background-size: contain; width="800" height="250" style="border:0; bottom:0px;" allowfullscreen="" loading="lazy"></iframe>',
-};
-function Iframe(props) {
-  return (
-    <div
-      dangerouslySetInnerHTML={{ __html: props.iframe ? props.iframe : "" }}
-    />
-  );
-}
 function Ramsheela() {
+  const images = [
+    {
+      original:
+        "https://user-images.githubusercontent.com/75436573/152689359-f8e11d2c-413e-4805-853d-7a00d07c8c8c.jpg",
+      thumbnail:
+        "https://user-images.githubusercontent.com/75436573/152689359-f8e11d2c-413e-4805-853d-7a00d07c8c8c.jpg",
+    },
+    {
+      original:
+        "https://user-images.githubusercontent.com/75436573/152689314-c6b6fafa-f0f0-47c3-a9e2-1bc1af16440a.jpg",
+      thumbnail:
+        "https://user-images.githubusercontent.com/75436573/152689314-c6b6fafa-f0f0-47c3-a9e2-1bc1af16440a.jpg",
+    },
+    {
+      original:
+        "https://user-images.githubusercontent.com/75436573/152689317-3fc058b6-6cca-4c2f-8538-12ebba163495.jpg",
+      thumbnail:
+        "https://user-images.githubusercontent.com/75436573/152689317-3fc058b6-6cca-4c2f-8538-12ebba163495.jpg",
+    },
+    {
+      original:
+        "https://user-images.githubusercontent.com/75436573/152689364-650e95c1-34a7-4cc8-8a2d-5c69654d5565.jpg",
+      thumbnail:
+        "https://user-images.githubusercontent.com/75436573/152689364-650e95c1-34a7-4cc8-8a2d-5c69654d5565.jpg",
+    },
+    {
+      original:
+        "https://user-images.githubusercontent.com/75436573/152689399-9b1b06e4-402d-4704-a06a-0bfb4c1edbfa.jpg",
+      thumbnail:
+        "https://user-images.githubusercontent.com/75436573/152689399-9b1b06e4-402d-4704-a06a-0bfb4c1edbfa.jpg",
+    },
+  ];
+
+  const demos = {
+    plotly:
+      '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.0641262993854!2d77.20578861508046!3d28.537792182455316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5bf87115d1a75b71!2zMjjCsDMyJzE2LjEiTiA3N8KwMTInMjguNyJF!5e0!3m2!1sen!2sin!4v1643996572584!5m2!1sen!2sin"   background-size: contain; width="800" height="250" style="border:0; bottom:0px;" allowfullscreen="" loading="lazy"></iframe>',
+  };
+  function Iframe(props) {
+    return (
+      <div
+        dangerouslySetInnerHTML={{ __html: props.iframe ? props.iframe : "" }}
+      />
+    );
+  }
   return (
-    <>
+    <div>
       <div>
         <div>
-          <ImageGallery items={images} showPlayButton={false} />
+          <ImageGallery items={images} autoPlay={true} />
         </div>
         <div className="about" id="about">
           <div className="headingsss">
@@ -189,6 +189,7 @@ function Ramsheela() {
           <div className="heading">
             <h1>THE QUINTESSENTIAL LIVING</h1>
           </div>
+
           <div className="table">
             <table>
               <thead>
@@ -315,7 +316,7 @@ function Ramsheela() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

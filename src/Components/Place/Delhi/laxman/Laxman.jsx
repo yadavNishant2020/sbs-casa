@@ -1,13 +1,27 @@
 import React from "react";
 import "../../hostel.scss";
 import "../../../Intro/intro.scss";
-import SimpleImageSlider from "react-simple-image-slider";
+import ImageGallery from "react-image-gallery";
 import { useParams } from "react-router";
-
 const images = [
-  { url: "/images/hostels/delhi/laxman/image0.jpg" },
-  { url: "/images/hostels/delhi/laxman/image1.jpg" },
-  { url: "/images/hostels/delhi/laxman/image2.jpg" },
+  {
+    original:
+      "https://user-images.githubusercontent.com/75436573/152700696-f32db49f-3d27-4bca-b5d9-ca332c569d4f.jpg",
+    thumbnail:
+      "https://user-images.githubusercontent.com/75436573/152700696-f32db49f-3d27-4bca-b5d9-ca332c569d4f.jpg",
+  },
+  {
+    original:
+      "https://user-images.githubusercontent.com/75436573/152700656-7f2f1945-aa52-473a-afcc-0fe0f65dd78d.jpg",
+    thumbnail:
+      "https://user-images.githubusercontent.com/75436573/152700656-7f2f1945-aa52-473a-afcc-0fe0f65dd78d.jpg",
+  },
+  {
+    original:
+      "https://user-images.githubusercontent.com/75436573/152700660-967e957a-0cb0-4b59-a0dd-694da01a59bd.jpg",
+    thumbnail:
+      "https://user-images.githubusercontent.com/75436573/152700660-967e957a-0cb0-4b59-a0dd-694da01a59bd.jpg",
+  },
 ];
 
 const demos = {
@@ -27,13 +41,7 @@ function Laxman() {
   return (
     <div>
       <div>
-        <SimpleImageSlider
-          width={"100vw"}
-          height={"80vh"}
-          images={images}
-          showBullets={true}
-          showNavs={true}
-        />
+        <ImageGallery items={images} autoPlay={true} />
       </div>
       <div className="about" id="about">
         <div className="headingsss">
@@ -59,7 +67,9 @@ function Laxman() {
                 <div id="btnBottom"></div>
               </div>
             </div>
-            <Iframe iframe={demos["plotly"]} />,
+            <div class="google-maps">
+              <Iframe iframe={demos["plotly"]} />,
+            </div>
           </div>
         </div>
         <div className="ameties">

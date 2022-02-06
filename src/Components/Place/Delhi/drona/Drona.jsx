@@ -1,15 +1,44 @@
 import React from "react";
 import "../../hostel.scss";
 import "../../../Intro/intro.scss";
-import SimpleImageSlider from "react-simple-image-slider";
-
+import ImageGallery from "react-image-gallery";
 const images = [
-  { url: "/images/hostels/delhi/drona/image0.jpg" },
-  { url: "/images/hostels/delhi/drona/image1.jpg" },
-  { url: "/images/hostels/delhi/drona/image2.jpg" },
-  { url: "/images/hostels/delhi/drona/image8.jpg" },
-  { url: "/images/hostels/delhi/drona/image6.jpg" },
-  { url: "/images/hostels/delhi/drona/image3.jpg" },
+  {
+    original:
+      "https://user-images.githubusercontent.com/75436573/152701588-628e6d33-a71d-406a-a9e7-aa69f2aa542c.jpg",
+    thumbnail:
+      "https://user-images.githubusercontent.com/75436573/152701588-628e6d33-a71d-406a-a9e7-aa69f2aa542c.jpg",
+  },
+  {
+    original:
+      "https://user-images.githubusercontent.com/75436573/152701593-c0ffe4a8-2ba7-44c1-9026-4f7bd1f0ca32.jpg",
+    thumbnail:
+      "https://user-images.githubusercontent.com/75436573/152701593-c0ffe4a8-2ba7-44c1-9026-4f7bd1f0ca32.jpg",
+  },
+  {
+    original:
+      "https://user-images.githubusercontent.com/75436573/152701595-9fe0ca57-5322-4be8-b364-2c6d40ad0cb7.jpg",
+    thumbnail:
+      "https://user-images.githubusercontent.com/75436573/152701595-9fe0ca57-5322-4be8-b364-2c6d40ad0cb7.jpg",
+  },
+  {
+    original:
+      "https://user-images.githubusercontent.com/75436573/152701596-c67f5fe8-4567-4f82-abe6-29537187646b.jpg",
+    thumbnail:
+      "https://user-images.githubusercontent.com/75436573/152701596-c67f5fe8-4567-4f82-abe6-29537187646b.jpg",
+  },
+  {
+    original:
+      "https://user-images.githubusercontent.com/75436573/152701599-46f576d0-fa27-4991-b5c3-5969d985bce8.jpg",
+    thumbnail:
+      "https://user-images.githubusercontent.com/75436573/152701599-46f576d0-fa27-4991-b5c3-5969d985bce8.jpg",
+  },
+  {
+    original:
+      "https://user-images.githubusercontent.com/75436573/152701601-9305386c-3e98-4906-ae8f-8c380008cff6.jpg",
+    thumbnail:
+      "https://user-images.githubusercontent.com/75436573/152701601-9305386c-3e98-4906-ae8f-8c380008cff6.jpg",
+  },
 ];
 
 const demos = {
@@ -27,13 +56,7 @@ function drona() {
   return (
     <div>
       <div>
-        <SimpleImageSlider
-          width={"100vw"}
-          height={"80vh"}
-          images={images}
-          showBullets={true}
-          showNavs={true}
-        />
+        <ImageGallery items={images} autoPlay={true} />
       </div>
       <div className="about" id="about">
         <div className="headingsss">
@@ -59,7 +82,9 @@ function drona() {
                 <div id="btnBottom"></div>
               </div>
             </div>
-            <Iframe iframe={demos["plotly"]} />,
+            <div class="google-maps">
+              <Iframe iframe={demos["plotly"]} />,
+            </div>
           </div>
         </div>
         <div className="ameties">

@@ -1,15 +1,46 @@
 import React from "react";
 import "../../hostel.scss";
 import "../../../Intro/intro.scss";
-import SimpleImageSlider from "react-simple-image-slider";
+import ImageGallery from "react-image-gallery";
 import { useParams } from "react-router";
 
 const images = [
-  { url: "/images/hostels/delhi/eklavaya/image1.jpeg" },
-  { url: "/images/hostels/delhi/eklavaya/image3.jpg" },
-  { url: "/images/hostels/delhi/eklavaya/image6.jpg" },
-  { url: "/images/hostels/delhi/eklavaya/image7.jpeg" },
-  { url: "/images/hostels/delhi/eklavaya/image5.jpg" },
+  {
+    original:
+      "https://user-images.githubusercontent.com/75436573/152701121-06f77f92-b48e-4124-affd-2ca896d71928.jpg",
+    thumbnail:
+      "https://user-images.githubusercontent.com/75436573/152701121-06f77f92-b48e-4124-affd-2ca896d71928.jpg",
+  },
+  {
+    original:
+      "https://user-images.githubusercontent.com/75436573/152701107-25bc7712-f56a-4312-8fe5-54eb720ff528.jpg",
+    thumbnail:
+      "https://user-images.githubusercontent.com/75436573/152701107-25bc7712-f56a-4312-8fe5-54eb720ff528.jpg",
+  },
+  // {
+  //   original:
+  //     "https://user-images.githubusercontent.com/75436573/152701110-c6bea5f0-517f-4d12-b81f-18cf82a2b077.jpeg",
+  //   thumbnail:
+  //     "https://user-images.githubusercontent.com/75436573/152701110-c6bea5f0-517f-4d12-b81f-18cf82a2b077.jpeg",
+  // },
+  {
+    original:
+      "https://user-images.githubusercontent.com/75436573/152701114-bc1d6d86-218e-4b50-95ac-000819cf6962.jpg",
+    thumbnail:
+      "https://user-images.githubusercontent.com/75436573/152701114-bc1d6d86-218e-4b50-95ac-000819cf6962.jpg",
+  },
+  {
+    original:
+      "https://user-images.githubusercontent.com/75436573/152701116-b9a5e22b-3fcb-43d4-bb07-1c75e138ba19.jpg",
+    thumbnail:
+      "https://user-images.githubusercontent.com/75436573/152701116-b9a5e22b-3fcb-43d4-bb07-1c75e138ba19.jpg",
+  },
+  {
+    original:
+      "https://user-images.githubusercontent.com/75436573/152701117-22a138a8-92ec-48b2-8400-1da9165862d9.jpeg",
+    thumbnail:
+      "https://user-images.githubusercontent.com/75436573/152701117-22a138a8-92ec-48b2-8400-1da9165862d9.jpeg",
+  },
 ];
 
 const demos = {
@@ -29,13 +60,7 @@ function Eklavaya() {
   return (
     <div>
       <div>
-        <SimpleImageSlider
-          width={"100vw"}
-          height={"80vh"}
-          images={images}
-          showBullets={true}
-          showNavs={true}
-        />
+        <ImageGallery items={images} autoPlay={true} />
       </div>
       <div className="about" id="about">
         <div className="headingsss">
@@ -61,7 +86,9 @@ function Eklavaya() {
                 <div id="btnBottom"></div>
               </div>
             </div>
-            <Iframe iframe={demos["plotly"]} />,
+            <div class="google-maps">
+              <Iframe iframe={demos["plotly"]} />,
+            </div>
           </div>
         </div>
         <div className="ameties">
