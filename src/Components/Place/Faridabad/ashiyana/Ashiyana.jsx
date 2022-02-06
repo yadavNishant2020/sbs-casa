@@ -1,15 +1,34 @@
 import React from "react";
 import "../../hostel.scss";
 import "../../../Intro/intro.scss";
-import SimpleImageSlider from "react-simple-image-slider";
+import ImageGallery from "react-image-gallery";
 
 const images = [
-  { url: "/images/hostels/faridabad/ashiyana/img1.jpg" },
-  { url: "/images/hostels/faridabad/ashiyana/img2.jpg" },
-  { url: "/images/hostels/faridabad/ashiyana/img3.jpg" },
-  { url: "/images/hostels/faridabad/ashiyana/img4.jpg" },
+  {
+    original:
+      "https://user-images.githubusercontent.com/75436573/152702668-0d9e4d04-1471-4ff1-a44a-f28d38dfb68c.jpg",
+    thumbnail:
+      "https://user-images.githubusercontent.com/75436573/152702668-0d9e4d04-1471-4ff1-a44a-f28d38dfb68c.jpg",
+  },
+  {
+    original:
+      "https://user-images.githubusercontent.com/75436573/152702673-272bfb62-6177-467e-aaa0-7d0c018ed5a9.jpg",
+    thumbnail:
+      "https://user-images.githubusercontent.com/75436573/152702673-272bfb62-6177-467e-aaa0-7d0c018ed5a9.jpg",
+  },
+  {
+    original:
+      "https://user-images.githubusercontent.com/75436573/152702676-aec1b94b-f4ff-4a41-964f-840824e4a185.jpg",
+    thumbnail:
+      "https://user-images.githubusercontent.com/75436573/152702676-aec1b94b-f4ff-4a41-964f-840824e4a185.jpg",
+  },
+  {
+    original:
+      "https://user-images.githubusercontent.com/75436573/152702677-ed83b944-ad6f-4e3a-bc79-e9aa88ab3c1b.jpg",
+    thumbnail:
+      "https://user-images.githubusercontent.com/75436573/152702677-ed83b944-ad6f-4e3a-bc79-e9aa88ab3c1b.jpg",
+  },
 ];
-
 const demos = {
   plotly:
     '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.486391965425!2d77.29379371507883!3d28.46489518248425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe33495e72c377326!2zMjjCsDI3JzUzLjYiTiA3N8KwMTcnNDUuNSJF!5e0!3m2!1sen!2sin!4v1643998439718!5m2!1sen!2sin"  background-size: contain; width="800" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
@@ -25,13 +44,7 @@ function Ashiyana() {
   return (
     <div>
       <div>
-        <SimpleImageSlider
-          width={"100vw"}
-          height={"80vh"}
-          images={images}
-          showBullets={true}
-          showNavs={true}
-        />
+        <ImageGallery items={images} autoPlay={true} />
       </div>
       <div className="about" id="about">
         <div className="headingsss">
@@ -54,7 +67,9 @@ function Ashiyana() {
                 <div id="btnBottom"></div>
               </div>
             </div>
-            <Iframe iframe={demos["plotly"]} />,
+            <div class="google-maps">
+              <Iframe iframe={demos["plotly"]} />,
+            </div>{" "}
           </div>
         </div>
         <div className="ameties">

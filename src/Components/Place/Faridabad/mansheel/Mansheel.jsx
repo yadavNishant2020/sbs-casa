@@ -1,12 +1,27 @@
 import React from "react";
 import "../../hostel.scss";
 import "../../../Intro/intro.scss";
-import SimpleImageSlider from "react-simple-image-slider";
+import ImageGallery from "react-image-gallery";
 
 const images = [
-  { url: "/images/hostels/faridabad/mansheel/img1.jpg" },
-  { url: "/images/hostels/faridabad/mansheel/img2.jpg" },
-  { url: "/images/hostels/faridabad/mansheel/img3.jpg" },
+  {
+    original:
+      "https://user-images.githubusercontent.com/75436573/152702448-b28976a0-1076-42f6-a33b-b783372563d6.jpg",
+    thumbnail:
+      "https://user-images.githubusercontent.com/75436573/152702448-b28976a0-1076-42f6-a33b-b783372563d6.jpg",
+  },
+  {
+    original:
+      "https://user-images.githubusercontent.com/75436573/152702443-5666d83c-9099-48eb-b935-808270b8d442.jpg",
+    thumbnail:
+      "https://user-images.githubusercontent.com/75436573/152702443-5666d83c-9099-48eb-b935-808270b8d442.jpg",
+  },
+  {
+    original:
+      "https://user-images.githubusercontent.com/75436573/152702445-4fdac180-3151-4dea-8a54-d87b7947cc69.jpg",
+    thumbnail:
+      "https://user-images.githubusercontent.com/75436573/152702445-4fdac180-3151-4dea-8a54-d87b7947cc69.jpg",
+  },
 ];
 
 const demos = {
@@ -24,13 +39,7 @@ function Mansheel() {
   return (
     <div>
       <div>
-        <SimpleImageSlider
-          width={"100vw"}
-          height={"80vh"}
-          images={images}
-          showBullets={true}
-          showNavs={true}
-        />
+        <ImageGallery items={images} autoPlay={true} />
       </div>
       <div className="about" id="about">
         <div className="headingsss">
@@ -56,7 +65,9 @@ function Mansheel() {
                 <div id="btnBottom"></div>
               </div>
             </div>
-            <Iframe iframe={demos["plotly"]} />,
+            <div class="google-maps">
+              <Iframe iframe={demos["plotly"]} />,
+            </div>
           </div>
         </div>
         <div className="ameties">

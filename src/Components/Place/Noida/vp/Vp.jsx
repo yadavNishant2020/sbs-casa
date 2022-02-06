@@ -1,13 +1,33 @@
 import React from "react";
 import "../../hostel.scss";
 import "../../../Intro/intro.scss";
-import SimpleImageSlider from "react-simple-image-slider";
+import ImageGallery from "react-image-gallery";
 
 const images = [
-  { url: "/images/hostels/noida/vp/img1.jpg" },
-  { url: "/images/hostels/noida/vp/img2.jpg" },
-  { url: "/images/hostels/noida/vp/img3.jpg" },
-  { url: "/images/hostels/noida/vp/img4.jpg" },
+  {
+    original:
+      "https://user-images.githubusercontent.com/75436573/152702167-f5d7f6d6-bd5e-4a45-9364-9904c1f5fb20.jpg",
+    thumbnail:
+      "https://user-images.githubusercontent.com/75436573/152702167-f5d7f6d6-bd5e-4a45-9364-9904c1f5fb20.jpg",
+  },
+  {
+    original:
+      "https://user-images.githubusercontent.com/75436573/152702141-91b2abcd-6b61-4327-a56d-2464df9b45f5.jpg",
+    thumbnail:
+      "https://user-images.githubusercontent.com/75436573/152702141-91b2abcd-6b61-4327-a56d-2464df9b45f5.jpg",
+  },
+  {
+    original:
+      "https://user-images.githubusercontent.com/75436573/152702142-06257744-8ff8-4dc0-a0bd-b41eb1472aac.jpg",
+    thumbnail:
+      "https://user-images.githubusercontent.com/75436573/152702142-06257744-8ff8-4dc0-a0bd-b41eb1472aac.jpg",
+  },
+  {
+    original:
+      "https://user-images.githubusercontent.com/75436573/152702152-d2663398-6406-41c0-975a-22bd741952ad.jpg",
+    thumbnail:
+      "https://user-images.githubusercontent.com/75436573/152702152-d2663398-6406-41c0-975a-22bd741952ad.jpg",
+  },
 ];
 
 const demos = {
@@ -25,13 +45,7 @@ function Vp() {
   return (
     <div>
       <div>
-        <SimpleImageSlider
-          width={"100vw"}
-          height={"80vh"}
-          images={images}
-          showBullets={true}
-          showNavs={true}
-        />
+        <ImageGallery items={images} autoPlay={true} />
       </div>
       <div className="about" id="about">
         <div className="headingsss">
@@ -54,7 +68,9 @@ function Vp() {
                 <div id="btnBottom"></div>
               </div>
             </div>
-            <Iframe iframe={demos["plotly"]} />,
+            <div class="google-maps">
+              <Iframe iframe={demos["plotly"]} />,
+            </div>
           </div>
         </div>
         <div className="ameties">
