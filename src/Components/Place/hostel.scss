@@ -1,7 +1,13 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
 .about {
   height: auto;
 }
-
+.image-gallery-image {
+  height: 70vh;
+  @media only screen and (max-width: 600px) {
+    height: auto;
+  }
+}
 .price {
   position: relative;
   align-items: center;
@@ -21,29 +27,43 @@
     font-weight: 250;
     color: #4dc3e0;
     padding-bottom: 1%;
+    @media only screen and (max-width: 600px) {
+    }
   }
   h1 {
     font-size: 4rem;
     align-self: center;
     color: #4c3c69;
+    @media only screen and (max-width: 600px) {
+      font-size: 2rem;
+    }
   }
 }
 .detailss {
   margin-top: 3%;
   display: flex;
   justify-content: space-around;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
   ul {
     list-style: circle;
     border-right: 1px solid #4dc3e0;
     height: 200px;
-
     padding-right: 7%;
-
+    @media only screen and (max-width: 600px) {
+      padding-left: 0px;
+      margin-left: 0;
+      height: 150px;
+    }
     li {
       font-weight: 600;
       font-size: 1rem;
       margin-bottom: 20px;
-
+      @media only screen and (max-width: 600px) {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+      }
       margin-left: 50px;
       color: #4c3c69;
     }
@@ -52,15 +72,26 @@
     display: flex;
     justify-content: space-between;
     width: 800px;
+    @media only screen and (max-width: 600px) {
+      flex-direction: column;
+    }
     p {
       width: 68%;
       font-family: "Open Sans", sans-serif;
       font-size: 1.25rem;
       font-weight: 300;
       line-height: 1.8rem;
+      @media only screen and (max-width: 600px) {
+        font-size: 0.8rem;
+        margin: 2%;
+        width: 40%;
+        line-height: 1.2rem;
+      }
     }
-    #btnMain {
-      margin: 0;
+    iframe {
+      @media only screen and (max-width: 600px) {
+        width: 100px;
+      }
     }
   }
   @import url("https://fonts.googleapis.com/css?family=Ubuntu:500");
@@ -69,19 +100,24 @@
     width: 200px;
     height: 70px;
     position: relative;
-    margin-top: 5%;
+    margin-top: 2%;
     bottom: 15px;
     perspective: 800px;
-
     cursor: pointer;
     overflow: hidden;
+    @media only screen and (max-width: 600px) {
+      margin-left: 30%;
+      width: 80px;
+      height: 30px;
+      margin-top: 0;
+    }
   }
   #btnBox {
     width: 100%;
     height: 100%;
     display: block;
     background-color: #4dc3e0;
-    font-family: fantasy;
+    font-family: "Times New Roman", serif;
     font-size: 32px;
     color: #ffffff;
     text-align: center;
@@ -90,6 +126,10 @@
     box-shadow: 0 15px 30px rgba(59, 2, 97, 0.4);
     transition: all 0.5s;
     border-radius: 5px;
+    @media only screen and (max-width: 600px) {
+      font-size: 10px;
+      line-height: 30px;
+    }
   }
   #btnBottom {
     width: 100%;
@@ -135,19 +175,45 @@
   align-items: flex-start;
   align-content: flex-start;
   background: transparent;
+  @media only screen and (max-width: 600px) {
+    padding-top: 0%;
+    justify-content: center;
+    align-items: center;
 
+    background: transparent;
+  }
   h1 {
     font-size: 3rem;
     padding-left: 10%;
     align-self: center;
     color: #4c3c69;
-
     width: 100vw;
+    @media only screen and (max-width: 600px) {
+      padding-left: 0%;
+      font-size: 1.2rem;
+      width: 80vw;
+    }
   }
 }
 .ameties {
   margin: 3% 0px;
   margin-bottom: 3%;
+}
+.google-maps {
+  position: relative;
+  padding-bottom: 35%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+  @media only screen and (max-width: 600px) {
+    padding-bottom: 75%;
+  }
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 80% !important;
 }
 .items-wrap {
   display: flex;
@@ -156,20 +222,35 @@
   background-color: #f3f9ff;
   border-radius: 5px;
   padding: 1%;
+  @media only screen and (max-width: 600px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
   .itm {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media only screen and (max-width: 600px) {
+      justify-content: center;
+      padding-top: 2%;
+    }
+
     p {
       margin-top: 2%;
       color: #3d9ab1;
       font-weight: 300;
+      @media only screen and (max-width: 600px) {
+        font-size: 0.8rem;
+      }
     }
 
     .imgg {
       width: 30%;
+      @media only screen and (max-width: 600px) {
+        width: 15%;
+      }
     }
   }
 }
@@ -185,8 +266,14 @@
     border: 5px solid white;
     background-color: #f3f9ff;
     color: #4c3c69;
+    @media only screen and (max-width: 600px) {
+      font-size: 0.5rem;
+    }
     img {
       width: 50%;
+      @media only screen and (max-width: 600px) {
+        width: 70%;
+      }
     }
   }
 
@@ -198,8 +285,14 @@
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
     color: #121d22;
+    @media only screen and (max-width: 600px) {
+      font-size: 0.6rem;
+    }
     img {
       width: 15%;
+      @media only screen and (max-width: 600px) {
+        width: 30%;
+      }
     }
   }
 }
