@@ -1,6 +1,6 @@
 @import "../../../global.scss";
 
-.portfolio {
+.gurgaon {
   background-color: #4dc3e078;
   display: flex;
   flex-direction: column;
@@ -16,12 +16,22 @@
       font-size: 20px;
     }
   }
+  p {
+    display: none;
+    @media only screen and (max-width: 600px) {
+      display: block;
+      font-size: 10px;
+      color: #181e1f;
+      margin-top: 5%;
+    }
+  }
   h3 {
     font-family: "Roboto";
-    font-weight: 200;
-    font-size: 4rem;
+    font-weight: 600;
+    font-size: 3.5rem;
     margin-top: 20px;
-    color: #677a83;
+    letter-spacing: 2px;
+    color: #4c3c69;
   }
 
   .containers {
@@ -31,12 +41,9 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
-
-    @media only screen and (max-width: 600px) {
-      margin-top: 6vh;
-      padding-bottom: 10vh;
-      width: 100%;
-      height: 70%;
+    @include mobile {
+      width: 110%;
+      margin-top: 0px;
     }
 
     .item {
@@ -50,9 +57,10 @@
       transition: all 0.5s ease;
       cursor: pointer;
 
-      @media only screen and (max-width: 600px) {
-        width: 230px;
-        height: 200px;
+      @include mobile {
+        width: 210px;
+        height: 150px;
+        margin-bottom: 26%;
       }
 
       h3 {
@@ -67,10 +75,6 @@
         width: 60%;
         height: 70%;
         object-fit: contain;
-        @media only screen and (max-width: 600px) {
-          width: 100%;
-          height: 70%;
-        }
       }
       img {
         width: 170%;

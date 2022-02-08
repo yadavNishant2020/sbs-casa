@@ -26,7 +26,7 @@ export default function Noida() {
   }, [selected]);
 
   return (
-    <div className="portfolio" id="hostel">
+    <div className="gurgaon" id="hostel">
       <h1>HOSTELS</h1>
 
       <h3>NOIDA</h3>

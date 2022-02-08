@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function about() {
   return (
-    <div className="about" id="about">
+    <div className="about" id="about" style={{ margin: "0px" }}>
       <div className="headings">
         <p>About</p>
         <h1>SBS CASA HOSTELS</h1>

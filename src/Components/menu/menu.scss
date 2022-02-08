@@ -11,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
   @media only screen and (max-width: 600px) {
     width: 220px;
     right: -220px;
@@ -19,37 +19,40 @@
 
   &.active {
     right: 0;
-    background-color: #f7fafc;
+    background-color: #ffffff;
   }
 
   ul {
-    padding: 0;
+    padding-top: 25%;
     list-style: none;
     font-size: 30px;
     font-weight: 300;
     color: #4dc3e0;
     width: 60%;
-    background-color: #f7fafc;
-
+    background-color: #ffffff;
+    @media only screen and (max-width: 600px) {
+      padding-left: 0%;
+    }
     li {
-      margin-bottom: 25px;
+      padding-bottom: 25%;
       font-family: "Roboto", sans-serif;
       color: #4c3c69;
-      background-color: #f7fafc;
+      background-color: #ffffff;
       @media only screen and (max-width: 600px) {
-        margin-bottom: 35px;
+        margin-bottom: 25px;
         font-size: 25px;
+        padding-left: 0%;
       }
       a {
         font-size: inherit;
         color: inherit;
         text-decoration: none;
-        background-color: #f7fafc;
+        background-color: #ffffff;
       }
 
       &:hover {
         font-weight: 500;
-        background-color: #f7fafc;
+        background-color: #ffffff;
       }
     }
   }

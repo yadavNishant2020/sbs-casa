@@ -3,9 +3,9 @@
 
 .about {
   background-image: url("../Background/skills_vector.png");
-
   background-size: cover;
   height: 100vh;
+  margin: 0px;
   @include mobile {
     flex-direction: column;
     align-items: center;
