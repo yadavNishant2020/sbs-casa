@@ -20,7 +20,7 @@
     display: none;
     @media only screen and (max-width: 600px) {
       display: block;
-      font-size: 10px;
+      font-size: 15px;
       color: #181e1f;
       margin-top: 5%;
     }
@@ -43,7 +43,7 @@
     justify-content: center;
     @include mobile {
       width: 110%;
-      margin-top: 0px;
+      margin-top: 20px;
     }
 
     .item {
@@ -58,8 +58,8 @@
       cursor: pointer;
 
       @include mobile {
-        width: 210px;
-        height: 150px;
+        width: 280px;
+        height: 240px;
         margin-bottom: 26%;
       }
 
