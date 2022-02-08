@@ -30,7 +30,8 @@ export default function Gurgaon() {
     <div className="portfolio" id="hostel">
       <h1>HOSTELS</h1>
 
-      <h3>Gurgaon</h3>
+      <h3>GURGAON</h3>
+      <p>Please select the hostel to explore more!</p>
 
       <div className="containers">
         {data.map((d) => (

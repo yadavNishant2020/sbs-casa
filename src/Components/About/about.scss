@@ -34,7 +34,7 @@
       align-self: center;
       color: #4c3c69;
       @media only screen and (max-width: 600px) {
-        font-size: 35px;
+        font-size: 25px;
       }
     }
   }
@@ -42,10 +42,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     background: transparent;
     p {
       font-family: "Open Sans", sans-serif;
+      display: flex;
       text-align: justify;
       margin: 2% 10%;
       font-size: 1.25rem;
@@ -66,6 +66,7 @@
     justify-content: center;
     background: transparent;
     flex-direction: row;
+    flex-direction: column;
     margin-top: 2%;
     h2 {
       font-family: "Roboto", sans-serif;
@@ -73,6 +74,15 @@
       font-weight: 250;
       @media only screen and (max-width: 600px) {
         font-size: 20px;
+      }
+    }
+    p {
+      display: none;
+      @media only screen and (max-width: 600px) {
+        display: block;
+        font-size: 10px;
+        color: #181e1f;
+        margin-bottom: 5%;
       }
     }
   }

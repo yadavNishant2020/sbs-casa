@@ -100,10 +100,10 @@ export default function Contact() {
                       placeholder="Message"
                       name="message"
                     ></textarea>
-                    {/* <button type="submit" onClick={sendEmail}>
+                    <button type="submit" value="Send">
                       Submit
-                    </button> */}
-                    <input type="submit" value="Send" />
+                    </button>
+                    {/* <input type="submit" /> */}
                   </form>
                 </div>
               </div>

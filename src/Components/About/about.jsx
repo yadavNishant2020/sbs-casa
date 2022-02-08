@@ -21,6 +21,8 @@ function about() {
       </div>
       <div className="city">
         <h2>Here you can find us!</h2>
+
+        <p>Please select the city you wanna stay!</p>
       </div>
       <div className="place">
         <ul>

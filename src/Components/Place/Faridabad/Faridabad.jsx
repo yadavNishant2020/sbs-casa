@@ -29,7 +29,8 @@ export default function Faridabad() {
     <div className="portfolio" id="hostel">
       <h1>HOSTELS</h1>
 
-      <h3>Faridabad</h3>
+      <h3>FARIDABAD</h3>
+      <p>Please select the hostel to explore more!</p>
 
       <div className="containers">
         {data.map((d) => (
