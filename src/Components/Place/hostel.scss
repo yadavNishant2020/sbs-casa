@@ -1,6 +1,7 @@
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
 .about {
   height: auto;
+  margin: 0 5%;
 }
 .image-gallery-image {
   height: 70vh;
@@ -67,6 +68,10 @@
       margin-left: 50px;
       color: #4c3c69;
     }
+    .pricee {
+      padding-bottom: 3%;
+      color: #4dc3e0;
+    }
   }
   .address {
     display: flex;
@@ -74,6 +79,7 @@
     width: 800px;
     @media only screen and (max-width: 600px) {
       flex-direction: column;
+      margin-top: 50px;
     }
     p {
       width: 68%;
@@ -105,6 +111,7 @@
     perspective: 800px;
     cursor: pointer;
     overflow: hidden;
+
     @media only screen and (max-width: 600px) {
       margin-left: 30%;
       width: 80px;
@@ -117,6 +124,25 @@
     height: 100%;
     display: block;
     background-color: #4dc3e0;
+    font-family: "Times New Roman", serif;
+    font-size: 32px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 70px;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 30px rgba(59, 2, 97, 0.4);
+    transition: all 0.5s;
+    border-radius: 5px;
+    @media only screen and (max-width: 600px) {
+      font-size: 10px;
+      line-height: 30px;
+    }
+  }
+  #sold {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #93b5c6;
     font-family: "Times New Roman", serif;
     font-size: 32px;
     color: #ffffff;

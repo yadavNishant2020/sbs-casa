@@ -53,12 +53,14 @@ function Akm() {
         </div>
         <div className="detailss">
           <ul>
-            <li>500m from Shri Aurobindo College</li>
-            <li>700m from Made Easy</li>
-            <li>700m from Fiitzee</li>
-            <li>700m from Narayana IT Academy</li>
-            <li>800m from Hauz Khas Metro Station</li>
-            <li>1200m from Malviya Nagar Metro Station</li>
+            <li className="pricee">
+              Pricing starting for (Full House 25000/-) ,<br /> (Single Room
+              10000/-)
+            </li>
+            <li>1500m from Old Faridabad metro station</li>
+            <li>800m from Sainik colony market</li>
+            <li>300m from Lalit Suri Hospitality School</li>
+            <li>300m from National Institute of finance management</li>
           </ul>
           <div className="map">
             <div className="address">
@@ -67,7 +69,7 @@ function Akm() {
                 - 121001
               </p>
               <div id="btnMain">
-                <div id="btnBox">BOOK NOW</div>
+                <div id="sold">SOLD OUT</div>
                 <div id="btnBottom"></div>
               </div>
             </div>

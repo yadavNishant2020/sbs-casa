@@ -33,7 +33,7 @@
     justify-content: center;
 
     @include mobile {
-      width: 100%;
+      width: 110%;
     }
 
     .item {
@@ -48,8 +48,8 @@
       cursor: pointer;
 
       @include mobile {
-        width: 130px;
-        height: 100px;
+        width: 190px;
+        height: 130px;
       }
 
       h3 {

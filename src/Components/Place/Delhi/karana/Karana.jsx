@@ -2,6 +2,7 @@ import React from "react";
 import "../../hostel.scss";
 import "../../../Intro/intro.scss";
 import ImageGallery from "react-image-gallery";
+import { Link } from "react-router-dom";
 
 const images = [
   {
@@ -47,6 +48,9 @@ function Karana() {
         </div>
         <div className="detailss">
           <ul>
+            <li className="pricee">
+              Pricing starting for (Twin 9000/-) ,<br /> (Single 14000/-)
+            </li>
             <li>50m from Made Easy</li>
             <li>200m from Fiitzee</li>
             <li>300m from Narayana IT Academy</li>
@@ -58,10 +62,12 @@ function Karana() {
               <p>
                 44A/4, Kalu Sarai, Near Made Easy Institute, New Delhi - 110016
               </p>
-              <div id="btnMain">
-                <div id="btnBox">BOOK NOW</div>
-                <div id="btnBottom"></div>
-              </div>
+              <Link to="/contact">
+                <div id="btnMain">
+                  <div id="btnBox">BOOK NOW</div>
+                  <div id="btnBottom"></div>
+                </div>
+              </Link>
             </div>
             <div class="google-maps">
               <Iframe iframe={demos["plotly"]} autoPlay={true} />,

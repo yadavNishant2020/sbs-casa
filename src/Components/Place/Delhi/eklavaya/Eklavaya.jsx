@@ -3,6 +3,7 @@ import "../../hostel.scss";
 import "../../../Intro/intro.scss";
 import ImageGallery from "react-image-gallery";
 import { useParams } from "react-router";
+import { Link } from "react-router-dom";
 
 const images = [
   {
@@ -68,6 +69,9 @@ function Eklavaya() {
         </div>
         <div className="detailss">
           <ul>
+            <li className="pricee">
+              Pricing starting for (Twin 10000/-) ,<br /> (Single 16000/-)
+            </li>
             <li>500m from Shri Aurobindo College</li>
             <li>700m from Made Easy</li>
             <li>700m from Fiitzee</li>
@@ -81,10 +85,12 @@ function Eklavaya() {
                 House no.-33 , Begampur, near Begampur Gurudwara, Malviya Nagar,
                 New Delhi -110017
               </p>
-              <div id="btnMain">
-                <div id="btnBox">BOOK NOW</div>
-                <div id="btnBottom"></div>
-              </div>
+              <Link to="/contact">
+                <div id="btnMain">
+                  <div id="btnBox">BOOK NOW</div>
+                  <div id="btnBottom"></div>
+                </div>
+              </Link>
             </div>
             <div class="google-maps">
               <Iframe iframe={demos["plotly"]} />,

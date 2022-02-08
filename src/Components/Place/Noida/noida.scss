@@ -32,10 +32,6 @@
     align-items: flex-start;
     justify-content: center;
 
-    @include mobile {
-      width: 100%;
-    }
-
     .item {
       width: 30%;
       height: 15rem;

@@ -47,12 +47,17 @@ function Mansheel() {
         </div>
         <div className="detailss">
           <ul>
-            <li>500m from Shri Aurobindo College</li>
-            <li>700m from Made Easy</li>
-            <li>700m from Fiitzee</li>
-            <li>700m from Narayana IT Academy</li>
-            <li>800m from Hauz Khas Metro Station</li>
-            <li>1200m from Malviya Nagar Metro Station</li>
+            <li className="pricee">
+              Pricing starting for (Full House 35000/-) ,<br /> (Single Room
+              15000/-)
+            </li>
+            <li>1 km Metro Station Sec 28 and Bus Stop</li>
+            <li>4 km Manav Rachna University</li>
+            <li>4 km Lingyas University</li>
+            <li>500 meter old Sadar Market Faridabad</li>
+            <li>100 meter petrol pump</li>
+            <li> 2 km Railway Station</li>
+            <li>2 km Metro, Hospital</li>
           </ul>
           <div className="map">
             <div className="address">
@@ -61,7 +66,7 @@ function Mansheel() {
                 121002
               </p>
               <div id="btnMain">
-                <div id="btnBox">BOOK NOW</div>
+                <div id="sold">SOLD OUT</div>
                 <div id="btnBottom"></div>
               </div>
             </div>

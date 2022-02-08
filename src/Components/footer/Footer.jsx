@@ -81,7 +81,6 @@ function Footer() {
           </div>
         </div>
       </footer>
-      ;
     </div>
   );
 }

@@ -53,6 +53,10 @@ function Guru() {
         </div>
         <div className="detailss">
           <ul>
+            <li className="pricee">
+              Pricing starting for (Full House 20000/-) ,<br /> (Single Room
+              12500/-)
+            </li>
             <li>500m from Dlf Phase 3 Rapid Metro Station</li>
             <li>300m from Accentur Building </li>
             <li>2Km from Cyber Hub </li>
@@ -62,7 +66,7 @@ function Guru() {
             <div className="address">
               <p>H.no.19/29, U-Block, Dlf Phase 3</p>
               <div id="btnMain">
-                <div id="btnBox">BOOK NOW</div>
+                <div id="sold">SOLD OUT</div>
                 <div id="btnBottom"></div>
               </div>
             </div>

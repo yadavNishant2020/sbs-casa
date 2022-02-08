@@ -53,18 +53,25 @@ function Vp() {
         </div>
         <div className="detailss">
           <ul>
-            <li>500m from Shri Aurobindo College</li>
-            <li>700m from Made Easy</li>
-            <li>700m from Fiitzee</li>
-            <li>700m from Narayana IT Academy</li>
-            <li>800m from Hauz Khas Metro Station</li>
-            <li>1200m from Malviya Nagar Metro Station</li>
+            <li className="pricee">
+              Pricing starting for (Full House 25000/-) ,<br /> (Single Room
+              10000/-)
+            </li>
+            <li>
+              9 minutes drive/4 Kms from Candor corporate area <br />
+              (Genpact,Accenture office)
+            </li>
+            <li>1.3 kms from Aqua line metro station</li>
+            <li>
+              20 minutes/14 km from botanicalgarden <br /> metro station{" "}
+            </li>
+            <li>10 minutes/3.7 kms from Felix hospital</li>
           </ul>
           <div className="map">
             <div className="address">
               <p>B1- 506, Purvanchal royal park, sector 137, Noida 201305</p>
               <div id="btnMain">
-                <div id="btnBox">BOOK NOW</div>
+                <div id="sold">SOLD OUT</div>
                 <div id="btnBottom"></div>
               </div>
             </div>

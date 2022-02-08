@@ -1,6 +1,8 @@
 import React from "react";
 import "../../hostel.scss";
 import "../../../Intro/intro.scss";
+import { Link } from "react-router-dom";
+
 import ImageGallery from "react-image-gallery";
 import { useParams } from "react-router";
 const images = [
@@ -49,6 +51,9 @@ function Laxman() {
         </div>
         <div className="detailss">
           <ul>
+            <li className="pricee">
+              Pricing starting for (Twin 10000/-) ,<br /> (Single 16000/-)
+            </li>
             <li>500m from Shri Aurobindo College</li>
             <li>700m from Made Easy</li>
             <li>700m from Fiitzee</li>
@@ -62,10 +67,12 @@ function Laxman() {
                 19B/1,First Floor, Begampur, near Begampur Gurudwara, Malviya
                 Nagar, New Delhi -110017
               </p>
-              <div id="btnMain">
-                <div id="btnBox">BOOK NOW</div>
-                <div id="btnBottom"></div>
-              </div>
+              <Link to="/contact">
+                <div id="btnMain">
+                  <div id="btnBox">BOOK NOW</div>
+                  <div id="btnBottom"></div>
+                </div>
+              </Link>
             </div>
             <div class="google-maps">
               <Iframe iframe={demos["plotly"]} />,

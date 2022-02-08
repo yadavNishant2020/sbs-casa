@@ -52,6 +52,10 @@ function Ashiyana() {
         </div>
         <div className="detailss">
           <ul>
+            <li className="pricee">
+              Pricing starting for (Full House 22000/-) ,<br /> (Single Room
+              12500/-)
+            </li>
             <li>Nearby Omaxe -10 min walking distance</li>
             <li>10 minutes from NHPC metro station </li>
             <li>12 -15 minutes from Sarai Metro station</li>
@@ -63,13 +67,13 @@ function Ashiyana() {
                 - 121003
               </p>
               <div id="btnMain">
-                <div id="btnBox">BOOK NOW</div>
+                <div id="sold">SOLD OUT</div>
                 <div id="btnBottom"></div>
               </div>
             </div>
             <div class="google-maps">
               <Iframe iframe={demos["plotly"]} />,
-            </div>{" "}
+            </div>
           </div>
         </div>
         <div className="ameties">

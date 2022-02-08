@@ -1,52 +1,72 @@
-import React, { useState } from "react";
+import React from "react";
 import "./contact.scss";
-
+import emailjs from "emailjs-com";
 export default function Contact() {
-  const [userData, setUserdata] = useState({
-    Name: "",
-    Email: "",
-    Message: "",
-  });
-  let name, value;
-  const postUserData = (event) => {
-    name = event.target.name;
-    value = event.target.value;
-    setUserdata({ ...userData, [name]: value });
-  };
+  // const [userData, setUserdata] = useState({
+  //   Name: "",
+  //   Email: "",
+  //   Message: "",
+  // });
+  // let name, value;
+  // const postUserData = (event) => {
+  //   name = event.target.name;
+  //   value = event.target.value;
+  //   setUserdata({ ...userData, [name]: value });
+  // };
 
-  //connection with firebase
-  const submitData = async (event) => {
-    event.preventDefault();
-    const { Name, Email, Message } = userData;
-    if (Name && Email && Message) {
-      const res = await fetch(
-        "https://personal-react-portfolio-default-rtdb.firebaseio.com/userDataRecords.json",
-        {
-          method: "POST",
-          hearders: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            Name,
-            Email,
-            Message,
-          }),
+  // //connection with firebase
+  // const submitData = async (event) => {
+  //   event.preventDefault();
+  //   const { Name, Email, Message } = userData;
+  //   if (Name && Email && Message) {
+  //     const res = await fetch(
+  //       "https://personal-react-portfolio-default-rtdb.firebaseio.com/userDataRecords.json",
+  //       {
+  //         method: "POST",
+  //         hearders: {
+  //           "Content-Type": "application/json",
+  //         },
+  //         body: JSON.stringify({
+  //           Name,
+  //           Email,
+  //           Message,
+  //         }),
+  //       }
+  //     );
+  //     if (res) {
+  //       setUserdata({
+  //         Name: "",
+  //         Email: "",
+  //         Message: "",
+  //       });
+  //       alert("Your Message has been sent successfully.");
+  //     } else {
+  //       alert("Plz fill the data");
+  //     }
+  //   } else {
+  //     alert("Plz fill the data");
+  //   }
+  // };
+
+  function sendEmail(e) {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_y9cqmft",
+        "template_l9y2pae",
+        e.target,
+        "user_lkBHyUUWDZ15UldwlZqor"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
         }
       );
-      if (res) {
-        setUserdata({
-          Name: "",
-          Email: "",
-          Message: "",
-        });
-        alert("Your Message has been sent successfully.");
-      } else {
-        alert("Plz fill the data");
-      }
-    } else {
-      alert("Plz fill the data");
-    }
-  };
+    e.target.reset();
+  }
   return (
     <section class="contact-page-sec" id="contact">
       <div class="containers">
@@ -66,17 +86,24 @@ export default function Contact() {
               </div>
               <div class="right-container">
                 <div class="right-inner-container">
-                  <form action="#">
+                  <form onSubmit={sendEmail}>
                     <h2 class="lg-view">Contact</h2>
                     <h2 class="sm-view">Let's Chat</h2>
                     <p>* Required</p>
 
-                    <input type="text" placeholder="Name *" />
-                    <input type="email" placeholder="Email *" />
+                    <input type="text" placeholder="Name *" name="name" />
+                    <input type="email" placeholder="Email *" name="email" />
 
-                    <input type="phone" placeholder="Phone" />
-                    <textarea rows="4" placeholder="Message"></textarea>
-                    <button>Submit</button>
+                    <input type="phone" placeholder="Phone" name="phone" />
+                    <textarea
+                      rows="4"
+                      placeholder="Message"
+                      name="message"
+                    ></textarea>
+                    {/* <button type="submit" onClick={sendEmail}>
+                      Submit
+                    </button> */}
+                    <input type="submit" value="Send" />
                   </form>
                 </div>
               </div>
