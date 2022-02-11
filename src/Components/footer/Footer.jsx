@@ -16,22 +16,22 @@ function Footer() {
           <div class="site-links">
             <span>Location</span>
             <ul class="list-links">
-              <Link to="/delhi">
+              <Link to="/delhi/">
                 <li>
                   <a>Delhi</a>
                 </li>
               </Link>
-              <Link to="/noida">
+              <Link to="/noida/">
                 <li>
                   <a>Noida</a>
                 </li>
               </Link>
-              <Link to="/gurgaon">
+              <Link to="/gurgaon/">
                 <li>
                   <a>Gurgaon</a>
                 </li>
               </Link>
-              <Link to="/faridabad">
+              <Link to="/faridabad/">
                 <li>
                   <a>Faridabad</a>
                 </li>
@@ -47,8 +47,8 @@ function Footer() {
                 </a>
               </li>
               <li class="email">
-                <a href="mailto:barhoumi.meriem1@gmail.com?subject=subject text">
-                  hello@sbscasa
+                <a href="mailto:sbscasahostel@gmail.com?subject=subject text">
+                  sbscasahostel@gmail.com
                 </a>
               </li>
             </ul>
@@ -64,20 +64,47 @@ function Footer() {
             </li>
 
             <li>
-              <a href="#">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/sbscasa/"
+                rel="noreferrer"
+              >
                 <i class="fab fa-instagram"></i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/sbscasa/"
+                rel="noreferrer"
+              >
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/sbscasa/"
+                rel="noreferrer"
+              >
                 <i class="fab fa-facebook-f"></i>
               </a>
             </li>
+          </div>
+          <div className="dev">
+            <p>
+              Design and Developed By
+              <a
+                target="_blank"
+                href="https://personal-react-portfolio.web.app/"
+                rel="noreferrer"
+              >
+                Nishant Yadav
+              </a>
+            </p>
+          </div>
+          <div className="copyright">
+            <p>© Copyright 2022 SBS Casa All Rights Reserved</p>
           </div>
         </div>
       </footer>

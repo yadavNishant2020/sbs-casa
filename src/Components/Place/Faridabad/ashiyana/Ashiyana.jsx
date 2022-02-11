@@ -50,11 +50,24 @@ function Ashiyana() {
         <div className="headingsss">
           <h1>SBS Ashiyana</h1>
         </div>
+
         <div className="detailss">
+          <li className="pricee">
+            Pricing starting from <br />
+            <span className="pr">
+              <b> Full House Rs-22000/- </b>
+              <span className="prc">
+                <b> Single Room Rs-12500/-</b>
+              </span>
+            </span>
+          </li>
           <ul>
-            <li className="pricee">
-              Pricing starting for (Full House 22000/-) ,<br /> (Single Room
-              12500/-)
+            <li className="priceee">
+              Pricing starting from <br />
+              <span className="pr">
+                (Twin 10000/-)
+                <span className="prc">(Single 16000/-)</span>
+              </span>
             </li>
             <li>Nearby Omaxe -10 min walking distance</li>
             <li>10 minutes from NHPC metro station </li>

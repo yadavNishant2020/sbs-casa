@@ -45,11 +45,24 @@ function Mansheel() {
         <div className="headingsss">
           <h1>SBS Mansheel</h1>
         </div>
+
         <div className="detailss">
+          <li className="pricee">
+            Pricing starting from <br />
+            <span className="pr">
+              <b> Full House Rs-35000/- </b>
+              <span className="prc">
+                <b> Single Room Rs-15000/-</b>
+              </span>
+            </span>
+          </li>
           <ul>
-            <li className="pricee">
-              Pricing starting for (Full House 35000/-) ,<br /> (Single Room
-              15000/-)
+            <li className="priceee">
+              Pricing starting from <br />
+              <span className="pr">
+                (Twin 10000/-)
+                <span className="prc">(Single 16000/-)</span>
+              </span>
             </li>
             <li>1 km Metro Station Sec 28 and Bus Stop</li>
             <li>4 km Manav Rachna University</li>

@@ -49,10 +49,10 @@ function App() {
             <Route exact path="/team" element={<Team />} />
 
             <Route exact path="/contact" element={<Contact />} />
-            <Route exact path="/delhi" element={<Delhi />} />
-            <Route exact path="/noida" element={<Noida />} />
-            <Route exact path="/gurgaon" element={<Gurgaon />} />
-            <Route exact path="/faridabad" element={<Faridabad />} />
+            <Route exact path="/delhi/" element={<Delhi />} />
+            <Route exact path="/noida/" element={<Noida />} />
+            <Route exact path="/gurgaon/" element={<Gurgaon />} />
+            <Route exact path="/faridabad/" element={<Faridabad />} />
             <Route exact path="/delhi/1" element={<RamSheela />} />
             <Route exact path="/delhi/2" element={<Laxman />} />
             <Route exact path="/delhi/3" element={<Karana />} />

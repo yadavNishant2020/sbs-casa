@@ -78,6 +78,9 @@ hr {
 ul.list-links {
   list-style-type: none;
 }
+.list-links a {
+  color: black !important;
+}
 
 ul.list-links li {
   font-size: 14px;
@@ -90,7 +93,7 @@ ul.list-links li {
 .adr-email {
   float: left;
   width: 28%;
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 .adr-email span {
@@ -112,7 +115,16 @@ ul.list-links li {
     font-size: 12px;
   }
 }
-
+.copyright {
+  display: flex;
+  justify-content: center;
+  p {
+    display: inline-block;
+    font-size: 10px;
+    white-space: nowrap;
+    font-family: "Gruppo", cursive;
+  }
+}
 .email a {
   text-decoration: none;
   color: #00a9c7;
@@ -128,7 +140,34 @@ ul.list-links li {
   align-items: center;
   flex-direction: row;
 }
+.dev {
+  display: flex;
+  justify-content: center;
+  p {
+    margin-top: 1%;
+    display: inline-block;
+    white-space: nowrap;
+    font-family: "Gruppo", cursive;
 
+    @media only screen and (max-width: 600px) {
+      margin-top: 2%;
+    }
+  }
+
+  a {
+    margin-left: 1.5%;
+    color: #00a9c7;
+    a:hover {
+      color: #262d55;
+    }
+  }
+  .dev:hover a {
+    color: #262d55;
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 10px;
+  }
+}
 .follow-icons li {
   margin: 0 10px;
   list-style: none;

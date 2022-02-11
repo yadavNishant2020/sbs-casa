@@ -51,11 +51,24 @@ function Guru() {
         <div className="headingsss">
           <h1>SBS Guru</h1>
         </div>
+
         <div className="detailss">
+          <li className="pricee">
+            Pricing starting from <br />
+            <span className="pr">
+              <b> Full House Rs-20000/- </b>
+              <span className="prc">
+                <b> Single Room Rs-12500/-</b>
+              </span>
+            </span>
+          </li>
           <ul>
-            <li className="pricee">
-              Pricing starting for (Full House 20000/-) ,<br /> (Single Room
-              12500/-)
+            <li className="priceee">
+              Pricing starting from <br />
+              <span className="pr">
+                (Twin 10000/-)
+                <span className="prc">(Single 16000/-)</span>
+              </span>
             </li>
             <li>500m from Dlf Phase 3 Rapid Metro Station</li>
             <li>300m from Accentur Building </li>

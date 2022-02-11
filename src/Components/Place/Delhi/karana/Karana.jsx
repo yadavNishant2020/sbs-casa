@@ -47,12 +47,25 @@ function Karana() {
           <h1>SBS Karan</h1>
         </div>
         <div className="detailss">
+          <li className="pricee">
+            Pricing starting from <br />
+            <span className="pr">
+              <b> Twin Rs-9000/-</b>
+              <span className="prc">
+                <b> Single Rs-14000/-</b>
+              </span>
+            </span>
+          </li>
           <ul>
-            <li className="pricee">
-              Pricing starting for (Twin 9000/-) ,<br /> (Single 14000/-)
+            <li className="priceee">
+              Pricing starting from <br />
+              <span className="pr">
+                (Twin 10000/-)
+                <span className="prc">(Single 16000/-)</span>
+              </span>
             </li>
             <li>50m from Made Easy</li>
-            <li>200m from Fiitzee</li>
+            <li>200m from Fiitjee</li>
             <li>300m from Narayana IT Academy</li>
             <li>500m from IIT university </li>
             <li>500m from Hauz Khas Metro</li>

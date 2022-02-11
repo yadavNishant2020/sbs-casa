@@ -50,13 +50,26 @@ function Laxman() {
           <h1>SBS Laxman</h1>
         </div>
         <div className="detailss">
+          <li className="pricee">
+            Pricing starting from <br />
+            <span className="pr">
+              <b> Twin Rs-10000/-</b>
+              <span className="prc">
+                <b> Single Rs-16000/-</b>
+              </span>
+            </span>
+          </li>
           <ul>
-            <li className="pricee">
-              Pricing starting for (Twin 10000/-) ,<br /> (Single 16000/-)
+            <li className="priceee">
+              Pricing starting from <br />
+              <span className="pr">
+                (Twin 10000/-)
+                <span className="prc">(Single 16000/-)</span>
+              </span>
             </li>
             <li>500m from Shri Aurobindo College</li>
             <li>700m from Made Easy</li>
-            <li>700m from Fiitzee</li>
+            <li>700m from Fiitjee</li>
             <li>700m from Narayana IT Academy</li>
             <li>800m from Hauz Khas Metro Station</li>
             <li>1200m from Malviya Nagar Metro Station</li>

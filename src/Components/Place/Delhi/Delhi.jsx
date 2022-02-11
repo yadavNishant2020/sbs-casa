@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import "./delhi.scss";
+import { Fade, Zoom } from "react-reveal";
+
 import { delhi, noida, gurgaon, faridabad } from "../../../data";
 import { Link } from "react-router-dom";
 
@@ -28,15 +30,20 @@ export default function Delhi() {
 
   return (
     <div className="portfolio" id="hostel">
-      <h1>HOSTELS</h1>
-      <h3>DELHI</h3>
-      <p>Please select the hostel to explore more!</p>
+      <Fade bottom>
+        <h1>HOSTELS</h1>
+        <h3>DELHI</h3>
+        <p>Please select the hostel to explore more!</p>
+      </Fade>
+
       <div className="containers">
         {data.map((d) => (
           <div className="item">
             <div className="imgContainer">
               <Link to={`/delhi/${d.id}`}>
-                <img src={d.img} alt="" />
+                <Zoom clear>
+                  <img src={d.img} alt="" />
+                </Zoom>
               </Link>
             </div>
             <h3>{d.title}</h3>

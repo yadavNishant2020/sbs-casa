@@ -1,61 +1,17 @@
 import React from "react";
 import "./contact.scss";
+import { Fade, Zoom } from "react-reveal";
+
 import emailjs from "emailjs-com";
 export default function Contact() {
-  // const [userData, setUserdata] = useState({
-  //   Name: "",
-  //   Email: "",
-  //   Message: "",
-  // });
-  // let name, value;
-  // const postUserData = (event) => {
-  //   name = event.target.name;
-  //   value = event.target.value;
-  //   setUserdata({ ...userData, [name]: value });
-  // };
-
-  // //connection with firebase
-  // const submitData = async (event) => {
-  //   event.preventDefault();
-  //   const { Name, Email, Message } = userData;
-  //   if (Name && Email && Message) {
-  //     const res = await fetch(
-  //       "https://personal-react-portfolio-default-rtdb.firebaseio.com/userDataRecords.json",
-  //       {
-  //         method: "POST",
-  //         hearders: {
-  //           "Content-Type": "application/json",
-  //         },
-  //         body: JSON.stringify({
-  //           Name,
-  //           Email,
-  //           Message,
-  //         }),
-  //       }
-  //     );
-  //     if (res) {
-  //       setUserdata({
-  //         Name: "",
-  //         Email: "",
-  //         Message: "",
-  //       });
-  //       alert("Your Message has been sent successfully.");
-  //     } else {
-  //       alert("Plz fill the data");
-  //     }
-  //   } else {
-  //     alert("Plz fill the data");
-  //   }
-  // };
-
   function sendEmail(e) {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_y9cqmft",
-        "template_l9y2pae",
+        "service_kd3cjz8",
+        "template_7jhf4mj",
         e.target,
-        "user_lkBHyUUWDZ15UldwlZqor"
+        "user_13jdfxcM0vv1Xlo9hL6WK"
       )
       .then(
         (result) => {
@@ -75,13 +31,15 @@ export default function Contact() {
             <div class="form-container">
               <div class="left-container">
                 <div class="left-inner-container">
-                  <h2>Let's Chat</h2>
-                  <p>
-                    Whether you have a question, book a room or simply want to
-                    connect.
-                  </p>
-                  <br />
-                  <p>Feel free to send me a message in the contact form</p>
+                  <Fade bottom>
+                    <h2>Let's Chat</h2>
+                    <p>
+                      Whether you have a question, book a room or simply want to
+                      connect.
+                    </p>
+                    <br />
+                    <p>Feel free to send me a message in the contact form</p>
+                  </Fade>
                 </div>
               </div>
               <div class="right-container">
@@ -89,20 +47,21 @@ export default function Contact() {
                   <form onSubmit={sendEmail}>
                     <h2 class="lg-view">Contact</h2>
                     <h2 class="sm-view">Let's Chat</h2>
-                    <p>* Required</p>
+                    <Zoom clear>
+                      <p>* Required</p>
+                      <input type="text" placeholder="Name *" name="name" />
+                      <input type="email" placeholder="Email *" name="email" />
 
-                    <input type="text" placeholder="Name *" name="name" />
-                    <input type="email" placeholder="Email *" name="email" />
-
-                    <input type="phone" placeholder="Phone" name="phone" />
-                    <textarea
-                      rows="4"
-                      placeholder="Message"
-                      name="message"
-                    ></textarea>
-                    <button type="submit" value="Send">
-                      Submit
-                    </button>
+                      <input type="phone" placeholder="Phone" name="phone" />
+                      <textarea
+                        rows="4"
+                        placeholder="Message"
+                        name="message"
+                      ></textarea>
+                      <button type="submit" value="Send">
+                        Submit
+                      </button>
+                    </Zoom>
                     {/* <input type="submit" /> */}
                   </form>
                 </div>
@@ -116,13 +75,18 @@ export default function Contact() {
               <div class="contact-info">
                 <div class="contact-info-item">
                   <div class="contact-info-icon">
-                    <img src="images/location.gif" alt="" />
+                    <Zoom clear>
+                      <img src="images/location.gif" alt="" />
+                    </Zoom>
                   </div>
                   <div class="contact-info-text">
-                    <span>
-                      1215, Lorem Ipsum, Ch 176080 <br />{" "}
-                    </span>
-                    <span>Delhi, India</span>
+                    <Zoom clear>
+                      <span>
+                        Malviya Nagar
+                        <br />
+                      </span>
+                      <span>Delhi, India</span>
+                    </Zoom>
                   </div>
                 </div>
               </div>
@@ -131,10 +95,14 @@ export default function Contact() {
               <div class="contact-info">
                 <div class="contact-info-item">
                   <div class="contact-info-icon">
-                    <img src="images/mail.gif" alt="" />
+                    <Zoom clear>
+                      <img src="images/mail.gif" alt="" />
+                    </Zoom>
                   </div>
                   <div class="contact-info-text">
-                    <span>Hello@sbscasa</span>
+                    <Zoom clear>
+                      <span>sbscasahostel@gmail.com</span>
+                    </Zoom>
                   </div>
                 </div>
               </div>
@@ -143,10 +111,14 @@ export default function Contact() {
               <div class="contact-info">
                 <div class="contact-info-item">
                   <div class="contact-info-icon phone">
-                    <img src="images/call.gif" alt="" />
+                    <Zoom clear>
+                      <img src="images/call.gif" alt="" />
+                    </Zoom>
                   </div>
                   <div class="contact-info-text ">
-                    <span>1800-SBS-CASA</span>
+                    <Zoom clear>
+                      <span>+91 70535 50509</span>
+                    </Zoom>
                   </div>
                 </div>
               </div>

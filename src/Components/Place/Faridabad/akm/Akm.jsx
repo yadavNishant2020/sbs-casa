@@ -51,11 +51,24 @@ function Akm() {
         <div className="headingsss">
           <h1>SBS AKM</h1>
         </div>
+
         <div className="detailss">
+          <li className="pricee">
+            Pricing starting from <br />
+            <span className="pr">
+              <b> Full House Rs-25000/- </b>
+              <span className="prc">
+                <b> Single Room Rs-10000/-</b>
+              </span>
+            </span>
+          </li>
           <ul>
-            <li className="pricee">
-              Pricing starting for (Full House 25000/-) ,<br /> (Single Room
-              10000/-)
+            <li className="priceee">
+              Pricing starting from <br />
+              <span className="pr">
+                (Twin 10000/-)
+                <span className="prc">(Single 16000/-)</span>
+              </span>
             </li>
             <li>1500m from Old Faridabad metro station</li>
             <li>800m from Sainik colony market</li>
