@@ -21,9 +21,22 @@
     right: 0;
     background-color: #ffffff;
   }
-
+  #list {
+    display: none;
+    ul {
+      font-size: 25px;
+      margin-top: 15px;
+      padding-left: 20px;
+      @mixin mobile {
+        font-size: 10px;
+      }
+    }
+    li {
+      padding-bottom: 10%;
+    }
+  }
   ul {
-    padding-top: 25%;
+    margin-top: 25%;
     list-style: none;
     font-size: 30px;
     font-weight: 300;
@@ -34,12 +47,13 @@
       padding-left: 0%;
     }
     li {
+      cursor: pointer;
       padding-bottom: 25%;
       font-family: "Roboto", sans-serif;
       color: #4c3c69;
       background-color: #ffffff;
       @media only screen and (max-width: 600px) {
-        margin-bottom: 25px;
+        margin-bottom: 10px;
         font-size: 25px;
         padding-left: 0%;
       }
