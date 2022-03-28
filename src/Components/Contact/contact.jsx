@@ -82,10 +82,8 @@ export default function Contact() {
                   <div class="contact-info-text">
                     <Zoom clear>
                       <span>
-                        Malviya Nagar
-                        <br />
-                      </span>
-                      <span>Delhi, India</span>
+                      15A DDA Flat, Vijay Mandal, Kalu Sarai <br></br>
+                      Delhi,  India</span>
                     </Zoom>
                   </div>
                 </div>
