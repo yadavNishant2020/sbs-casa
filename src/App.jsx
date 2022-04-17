@@ -1,3 +1,4 @@
+import Favicon from "react-favicon";
 import Topbar from "./Components/topbar/Topbar";
 import Intro from "./Components/Intro/intro";
 import About from "./Components/About/about";
@@ -38,6 +39,7 @@ function App() {
               path="/"
               element={
                 <div>
+                  <Favicon url="https://user-images.githubusercontent.com/75436573/158964722-6fdba310-fe94-4721-bf58-b8785e3e76ad.png" />
                   <Intro />
                   <About />
                   <Contact />
@@ -47,7 +49,6 @@ function App() {
             ></Route>
             <Route exact path="/about" element={<About />} />
             <Route exact path="/team" element={<Team />} />
-
             <Route exact path="/contact" element={<Contact />} />
             <Route exact path="/delhi/" element={<Delhi />} />
             <Route exact path="/noida/" element={<Noida />} />
